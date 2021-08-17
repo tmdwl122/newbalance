@@ -4,35 +4,26 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-	<link rel="stylesheet" href="./css/reset.css">
+	<title>Swatch</title>
 	<link rel="stylesheet" href="./css/slick.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/index.css">
 	<script src="./js/jquery-1.12.4.min.js"></script>
-	<script src="./js/slick.min.js"></script>
 	<script src="./js/prefixfree.min.js"></script>
-	<script src="./js/jquery.mousewheel.min.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<!-- <script src="./js/jquery.mousewheel.min.js"></script> -->
 	
 </head>
 <body>
 	
-<header id="header">
+<div id="nav">
 	<!-- 로고 -->
-	<h1><img src="./img/logo2.png" alt=""></h1>
-
-	<!-- 주 메뉴 -->
-	<!-- <ul id="menu">
-		<li><a href="#">HOME</a></li>
-		<li><a href="#">ABOUT</a></li>
-		<li><a href="#">PORTFOLIO</a></li>
-		<li><a href="#">CONTACT</a></li>
-	</ul> -->
-
-	<!-- 햄버거 메뉴 -->
+	<h1></h1>
+	
 	<div class="open">
+		<!-- <i class="fas fa-bars"></i> -->
 		<span class="bar bar1"></span>
 		<span class="bar bar2"></span>
 		<span class="bar bar3"></span>
@@ -40,204 +31,216 @@
 	</div>
 	
 	<div class="openlist">
-		<ul>
-			<li><a href="#sect1">HOME</a></li>
-			<li><a href="#sect2">ABOUT</a></li>
-			<li><a href="#sect3">PORTFOLIO</a></li>
-			<li><a href="#sect4">CONTACT</a></li>
+		<ul class="list1">
+			<li><a href="#">SHOP</a></li>
+				<ul class="list2">
+					<li><a href="#">MEN</a></li>
+					<li><a href="#">WOMEN</a></li>
+					<li><a href="#">KIDS</a></li>
+				</ul>
+			<li><a href="#">STORE</a></li>
+			<li><a href="#">NOTICE</a></li>
+			<li><a href="#">NB&YOU</a></li>
+				<ul class="list2">
+					<li><a href="#">UPDATE</a></li>
+					<li><a href="#">NB GUIDE</a></li>
+					<li><a href="#">LOOK SHOP</a></li>
+					<li><a href="#">NB TAG</a></li>
+					<li><a href="#">EVENT</a></li>
+				</ul>
 		</ul>
+		<!-- <a href="#"><img src="./img/mynb.jpg" alt="" class="mynb"></a> -->
+		<p>KR | EN | CN</p>
 	</div>
-</header>
+	
+	
+	<!-- sns -->
+	<ul id="mypage">
+		<li><a href="#"><i class="far fa-user"></i></a></li>
+		<li><a href="#"><i class="fas fa-search"></i></a></li>
+		<li><a href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
+	</ul>
+</div>
 
 
-<!-- 네비게이션 -->
-<nav id="nav">
-	<li><a href="#"><span title="HOME">HOME</span></a></li>
-	<li><a href="#"><span title="ABOUT">ABOUT</span></a></li>
-	<li><a href="#"><span title="PORTFOLIO">PORTFOLIO</span></a></li>
-	<li><a href="#"><span title="CONTACT">CONTACT</span></a></li>
-</nav>
-
-
+<!-- 
+<div class="go">
+	<a href="#"><i class="fas fa-arrow-up"></i></a>
+</div> -->
 
 <!-- 전체 페이지 -->
-<main id="main">
-	
+<div id="wrap">
+
 	<!-- 첫 번째 박스 -->
 	<section id="sect1">
-	<div class="text">
-			<span>WELCOME</span>
-			<span>TO MY</span>
-			<span>PORTFOLIO</span>
+		<div class="mainimg">
+			<div class="vid">
+				<video src="./img/vid_11.mp4" autoplay muted loop center></video>
+			</div>
+			<div class="text">
+				<p>NEW Set-Up Collection</p>
+				<h2>NB Go Out Style</h2>
+				<h3>새롭게 불어오는 변화의 바람</h3>
+				<a href="#">Go Shop ></a>
+			</div>
 		</div>
 	</section>
-
+	
 	<!-- 두 번째 박스 -->
 	<section id="sect2">
-		<div class="container">
-			<div class="card card1">
-				<img src="./img/profile.png" alt="" class="profile">
-				<div class="text">
-					<p>이승지 / LEE SEUNGJI</p>
-					<p>Front End</p>
+		<div class="slideOuter1 row">
+			<h2 class="cateText">Related Product</h2>
+			<h3>연관 제품 보기</h3>
+			<a href="#">Go Shop ></a>
+			<div class="slideInner1">
+				<div class="miniSld">
+					<a href=""><img src="./img/related_2.png" alt=""></a>
+					<p class="prodName">UNI 초경량 캠퍼 집업</p>
+					<p class="pricName">129,000원</p>
 				</div>
-			</div>
-			<div class="card card2">
-				<div class="profile">
-					<img src="./img/profileicon.png" alt="" class="picon">
-					<p><strong>Profile</strong></p>
-					<div class="info">
-						<i class="fas fa-user-alt"></i>
-						<p>1999.11.18</p>
-						<i class="fas fa-mobile"></i>
-						<p>010 4146 9407</p>
-						<i class="fas fa-envelope"></i>
-						<p>tmdl122@naver.com</p>
-					</div>
-	
+				<div class="miniSld">
+					<a href=""><img src="./img/related_5.png" alt=""></a>
+					<p class="prodName">UNI 초경량 캠퍼 집업</p>
+					<p class="pricName">129,000원</p>
 				</div>
-			</div>
-			<div class="card card3">
-				<img src="./img/toolicon.png" alt="" class="sicon">
-				<p><strong>Skills</strong></p>
-				<div class="skillContainer">
-					<div class="html">
-						<div class="score">
-							<div class="myscore"></div>
-						</div>
-						<p>HTML5</p>
-					</div>
-					<div class="css">
-						<div class="score">
-							<div class="myscore"></div>
-						</div>
-						<p>CSS3</p>
-					</div>
-					<div class="script">
-						<div class="score">
-							<div class="myscore"></div>
-						</div>
-						<p>JS</p>
-					</div>
-					<div class="jquery">
-						<div class="score">
-							<div class="myscore"></div>
-						</div>
-						<p>jQuery</p>
-					</div>
-					<div class="react">
-						<div class="score">
-							<div class="myscore"></div>
-						</div>
-						<p>React</p>
-					</div>
+				<div class="miniSld">
+					<a href=""><img src="./img/related_6.png" alt=""></a>
+					<p class="prodName">UNI 초경량 캠퍼 집업</p>
+					<p class="pricName">129,000원</p>
 				</div>
-			</div>
-			<div class="card card4">
-				<p><i class="fas fa-quote-right"></i></p>
-				<p>안녕하세요,</p>
-				<p>끝없이</p>
-				<p>성장하는</p>
-				<p>이승지입니다</p>
-				
+				<div class="miniSld">
+					<a href=""><img src="./img/related_1.png" alt=""></a>
+					<p class="prodName">UNI 초경량 캠퍼 집업</p>
+					<p class="pricName">129,000원</p>
+				</div>
+				<div class="miniSld">
+					<a href=""><img src="./img/related_4.png" alt=""></a>
+					<p class="prodName">UNI 초경량 캠퍼 집업</p>
+					<p class="pricName">129,000원</p>
+				</div>
+				<div class="miniSld">
+					<a href=""><img src="./img/related_3.png" alt=""></a href="">
+					<p class="prodName">UNI 초경량 캠퍼 집업</p>
+					<p class="pricName">129,000원</p>
+				</div>
 			</div>
 		</div>
-	
-
 	</section>
 	
 	<!-- 세 번째 박스 -->
 	<section id="sect3">
-	<div class="portfolio">
-			<ul>
-				<li>
-					<a href="#" data-src1="./img/portflio1_page.jpg"><img src="./img/portflio1_main.jpg" alt="">VIEW +</a>
-				</li>
-				<li>
-					<a href="#"><img src="./img/portflio2_main.jpg" alt="">VIEW +</a>
-				</li>
-				
-				<li><a href="#"><img src="./img/portflio3_main.jpg" alt="">VIEW +</a></li>
-				<li><a href="#"><img src="./img/portflio4_main.jpg" alt="">VIEW +</a></li>
-			</ul>
+		
+		<div class="collection row">
+			<h2 class="cateText">Collection</h2>
+			<div class="slideOuter2">
+				<div class="slideInner2">
+					<div class="miniSld2">
+						<img src="./img/collection1.png" alt="">
+					</div>
+					<div class="miniSld2">
+						<img src="./img/collection2.jpg" alt="">
+					</div>
+					<div class="miniSld2">
+						<img src="./img/collection3.jpg" alt="">
+					</div>
+				</div>
+			</div>
 			
-	</div>
-	<!-- <button class="close"><i class="fas fa-times"></i></button>	 -->
+			<h3>NB LETTER PACK</h3>
+			<p>캘리포니아의 여름을 담은 파스텔 톤의 그린과 옐로, 그리고 클래식한 블루</p>
+			<a href="#" class="coButton">컬렉션 구매하기</a>
+		</div>
 		
 	</section>
 	
 	<!-- 네 번째 박스 -->
 	<section id="sect4">
-		<div class="contact">
-			<div class="left">
-					<h2>Thank you for Watching<br>
-					감사합니다</h2>
-
-					<!-- heirarchy: #cuboid > form > div*4(cuboid faces) -->
-					<div id="cuboid">
-			<form>
-				<!-- #1 hover button -->
-				<div>
-					<p class="cuboid-text">Subscribe</p>
+		<div class="best row">
+			<div class="bestText">
+				<h2 class="cateText">Best <span>New</span></h2>
+				<div class="img">
+					<a href="#"><img src="./img/best.png" alt=""></a>
+					<a href="#"><i class="fas fa-plus"></i></a>
 				</div>
-				<!-- #2 text input -->
-				<div>
-					<!-- Label to trigger #submit -->
-					<label for="submit" class="submit-icon">
-						<i class="fa fa-chevron-right"></i>
-					</label>
-					<input type="text" id="email" class="cuboid-text" placeholder="Your Email" autocomplete="off"/>
-					<!-- hidden submit button -->
-					<input type="submit" id="submit" />
-				</div>
-				<!-- #3 loading message -->
-				<div>
-					<p class="cuboid-text loader">Just a moment</p>
-				</div>
-				<!-- #4 success message -->
-				<div>
-					<!-- reset/retry button -->
-					<span class="reset-icon"><i class="fa fa-refresh"></i></span>
-					<p class="cuboid-text">Thankyou, we'll be in touch</p>
-				</div>
-			</form>
-					</div>
-			</div>
-		
-			<div class="right">
-				<h3>tmdl122@naver.com</h3>
-			</div>
-			<div class="copy">
-				<p>Copyrightⓒ2021 ITS SKIN SHOP. All Rights Reserved.</p>
+				<p class="prodName">UNI 초경량 캠퍼 집업</p>
+				<p class="pricName">129,000원</p>
+				<a href="#"><i class="fas fa-plus"></i></a>
 				
 			</div>
-			
-			
+			<div class="bestItem">
+				<div class="img">
+					<a href="#"><img src="./img/best1.png" alt=""></a>
+					<p class="prodName">UNI 초경량 캠퍼 집업</p>
+				    <p class="pricName">129,000원</p>
+					<a href="#"><i class="fas fa-plus"></i></a>
+				</div>
+				<div class="img">
+					<a href="#"><img src="./img/best2.png" alt=""></a>
+					<p class="prodName">UNI 초경량 캠퍼 집업</p>
+				    <p class="pricName">129,000원</p>
+					<a href="#"><i class="fas fa-plus"></i></a>
+				</div>
+				<div class="img">
+					<a href="#"><img src="./img/best3.png" alt=""></a>
+					<p class="prodName">UNI 초경량 캠퍼 집업</p>
+				    <p class="pricName">129,000원</p>
+					<a href="#"><i class="fas fa-plus"></i></a>
+				</div>
+				<div class="img">
+					<a href="#"><img src="./img/best4.png" alt=""></a>
+					<p class="prodName">UNI 초경량 캠퍼 집업</p>
+				    <p class="pricName">129,000원</p>
+					<a href="#"><i class="fas fa-plus"></i></a>
+				</div>
+			</div>
 		</div>
 		
-
-		<!-- <div class="contactBox">
-			<form action="#" method="POST">
-				<fieldset>
-					<legend class="blind">이메일을 남겨주세요</legend>
-					<div>
-						<p class="contactText">Contact</p>
-					</div>
-					<div>
-						<label for="email" class="icon"><i class="fas fa-arrow-circle-right"></i></label>
-						<input type="text" name="email" id="email" placeholder="이메일을 남겨주세요">
-					</div>
-					<div>
-						<span><i class="fas fa-sync"></i></span>
-						<p class="contactText">감사합니다</p>
-					</div>
-				</fieldset>
-			</form>
-		</div> -->
 	</section>
 
+	<section id="sect5">
+		<h2 class="cateText">NB Now</h2>
+		<div class="nbNow row">
+			<div class="nowBox">
+				<div class="imgBox">
+					<div class="bg"></div>
+					<a href="#"><img src="./img/now.jpg" alt=""></a>
+				</div>
+				<h3>327 Perfectly Unexpected</h3>
+				<p>현대적인 디자인으로 재해석되어 탄생한 327 스플릿 디자인 신규컬러 출시</p>
+				<a href="#">Go Shop ></a>
+				
+			</div>
+			<div class="nowBox">
+				<div class="imgBox">
+					<div class="bg"></div>
+					<a href="#"><img src="./img/now2.jpg" alt=""></a>
+				</div>
+				<h3>327 Perfectly Unexpected</h3>
+				<p>현대적인 디자인으로 재해석되어 탄생한 327 스플릿 디자인 신규컬러 출시</p>
+				<a href="#">Go Shop ></a>
+			</div>
+		</div>
+	</section>
 
-</main>
+	<section id="sect6">
+		
+		<div class="sns">
+			<div class="snsImg1"><img src="./img/sns.png" alt=""></div>
+			<div class="snsImg2">
+				<h2 class="cateText">@NewBalane</h2>
+				<h3>인스타그램으로 만나는 뉴발란스</h3>
+				<a href="#">FOLLOW US IN INSTAGRAM ></a>
+				<img src="./img/sns.jpg" alt="">
+				<img src="./img/sns2.jpg" alt="">
+				<img src="./img/sns3.jpg" alt="">
+			</div>
+		</div>
+	</section>
+</div>
+
+<footer>
+
+</footer>
 
 <script src="./js/index.js"></script>
 </body>
