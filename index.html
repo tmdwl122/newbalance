@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Swatch</title>
+	
+	<title>뉴발란스 온라인스토어</title>
 	<link rel="stylesheet" href="./css/slick.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 	<link rel="stylesheet" href="./css/reset.css">
@@ -13,7 +14,7 @@
 	<script src="./js/jquery-1.12.4.min.js"></script>
 	<script src="./js/prefixfree.min.js"></script>
 	<script src="./js/slick.min.js"></script>
-	<!-- <script src="./js/jquery.mousewheel.min.js"></script> -->
+	<script src="./js/jquery.mousewheel.min.js"></script>
 	
 </head>
 <body>
@@ -75,7 +76,7 @@
 	<section id="sect1">
 		<div class="mainimg">
 			<div class="vid">
-				<video src="./img/vid_11.mp4" autoplay muted loop center></video>
+				<video src="./img/vid.mp4" autoplay muted loop center></video>
 			</div>
 			<div class="text">
 				<p>NEW Set-Up Collection</p>
@@ -91,7 +92,7 @@
 		<div class="slideOuter1 row">
 			<h2 class="cateText">Related Product</h2>
 			<h3>연관 제품 보기</h3>
-			<a href="#">Go Shop ></a>
+			<a href="#" class="shopText">Go Shop ></a>
 			<div class="slideInner1">
 				<div class="miniSld">
 					<a href=""><img src="./img/related_2.png" alt=""></a>
@@ -132,6 +133,7 @@
 		
 		<div class="collection row">
 			<h2 class="cateText">Collection</h2>
+			<a href="#" class="shopText">Go Shop ></a>
 			<div class="slideOuter2">
 				<div class="slideInner2">
 					<div class="miniSld2">
@@ -144,53 +146,47 @@
 						<img src="./img/collection3.jpg" alt="">
 					</div>
 				</div>
+				<h3>NB LETTER PACK</h3>
+				<p>캘리포니아의 여름을 담은 파스텔 톤의 그린과 옐로, 그리고 클래식한 블루</p>
+				<a href="#" class="coButton">컬렉션 구매하기</a>
 			</div>
 			
-			<h3>NB LETTER PACK</h3>
-			<p>캘리포니아의 여름을 담은 파스텔 톤의 그린과 옐로, 그리고 클래식한 블루</p>
-			<a href="#" class="coButton">컬렉션 구매하기</a>
+			
 		</div>
 		
 	</section>
 	
 	<!-- 네 번째 박스 -->
 	<section id="sect4">
+		
 		<div class="best row">
-			<div class="bestText">
-				<h2 class="cateText">Best <span>New</span></h2>
-				<div class="img">
-					<a href="#"><img src="./img/best.png" alt=""></a>
-					<a href="#"><i class="fas fa-plus"></i></a>
-				</div>
+			<h2 class="cateText">Best New</h2>
+			<a href="#" class="shopText">Go Shop ></a>
+			<div class="bestLeft">
+				<a href="#"><img src="./img/best.jpg" alt=""></a>
 				<p class="prodName">UNI 초경량 캠퍼 집업</p>
 				<p class="pricName">129,000원</p>
-				<a href="#"><i class="fas fa-plus"></i></a>
-				
 			</div>
-			<div class="bestItem">
+			<div class="bestRight">
 				<div class="img">
 					<a href="#"><img src="./img/best1.png" alt=""></a>
 					<p class="prodName">UNI 초경량 캠퍼 집업</p>
 				    <p class="pricName">129,000원</p>
-					<a href="#"><i class="fas fa-plus"></i></a>
 				</div>
 				<div class="img">
 					<a href="#"><img src="./img/best2.png" alt=""></a>
 					<p class="prodName">UNI 초경량 캠퍼 집업</p>
 				    <p class="pricName">129,000원</p>
-					<a href="#"><i class="fas fa-plus"></i></a>
 				</div>
 				<div class="img">
 					<a href="#"><img src="./img/best3.png" alt=""></a>
 					<p class="prodName">UNI 초경량 캠퍼 집업</p>
 				    <p class="pricName">129,000원</p>
-					<a href="#"><i class="fas fa-plus"></i></a>
 				</div>
 				<div class="img">
 					<a href="#"><img src="./img/best4.png" alt=""></a>
 					<p class="prodName">UNI 초경량 캠퍼 집업</p>
 				    <p class="pricName">129,000원</p>
-					<a href="#"><i class="fas fa-plus"></i></a>
 				</div>
 			</div>
 		</div>
@@ -198,16 +194,17 @@
 	</section>
 
 	<section id="sect5">
-		<h2 class="cateText">NB Now</h2>
+		
 		<div class="nbNow row">
+			<h2 class="cateText">NB Now</h2>
 			<div class="nowBox">
 				<div class="imgBox">
 					<div class="bg"></div>
 					<a href="#"><img src="./img/now.jpg" alt=""></a>
 				</div>
-				<h3>327 Perfectly Unexpected</h3>
-				<p>현대적인 디자인으로 재해석되어 탄생한 327 스플릿 디자인 신규컬러 출시</p>
-				<a href="#">Go Shop ></a>
+				<h3>Perfectly Unexpected</h3>
+				<p>현대적인 디자인으로 재해석되어 탄생한<br> 327 스플릿 디자인 신규컬러 출시</p>
+				<a href="#" class="more">자세히 보기</a>
 				
 			</div>
 			<div class="nowBox">
@@ -215,9 +212,9 @@
 					<div class="bg"></div>
 					<a href="#"><img src="./img/now2.jpg" alt=""></a>
 				</div>
-				<h3>327 Perfectly Unexpected</h3>
+				<h3>NB KIDS ARRIVAL</h3>
 				<p>현대적인 디자인으로 재해석되어 탄생한 327 스플릿 디자인 신규컬러 출시</p>
-				<a href="#">Go Shop ></a>
+				<a href="#" class="more">자세히 보기</a>
 			</div>
 		</div>
 	</section>
@@ -225,21 +222,30 @@
 	<section id="sect6">
 		
 		<div class="sns">
-			<div class="snsImg1"><img src="./img/sns.png" alt=""></div>
+			<div class="snsImg1">
+				<a href="https://www.instagram.com/newbalance/" target="_blank"><img src="./img/sns.png" alt=""></a>
+			</div>
 			<div class="snsImg2">
-				<h2 class="cateText">@NewBalane</h2>
-				<h3>인스타그램으로 만나는 뉴발란스</h3>
-				<a href="#">FOLLOW US IN INSTAGRAM ></a>
-				<img src="./img/sns.jpg" alt="">
-				<img src="./img/sns2.jpg" alt="">
-				<img src="./img/sns3.jpg" alt="">
+				<div class="snsText">
+					<h2 class="cateText">@newbalance</h2>
+					<h3>인스타그램으로 만나는 뉴발란스</h3>
+					<a href="https://www.instagram.com/newbalance/" target="_blank">FOLLOW US IN INSTAGRAM ></a>
+				</div>
+				<div class="miniSns">
+					<img src="./img/sns.jpg" alt="">
+					<img src="./img/sns2.jpg" alt="">
+					<img src="./img/sns3.jpg" alt="">
+					<img src="./img/sns4.png" alt="">
+					<img src="./img/sns5.jpg" alt="">
+				</div>
 			</div>
 		</div>
 	</section>
 </div>
 
 <footer>
-
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, dignissimos beatae aut nesciunt quibusdam sunt, hic veniam, culpa in totam doloremque voluptates iste quidem placeat sit aperiam praesentium et ullam.</p>
+<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusantium adipisci quia voluptatibus ex. Quo consectetur nam rem saepe, assumenda repellat ipsam recusandae a minus quos quis aut autem dignissimos!</div>
 </footer>
 
 <script src="./js/index.js"></script>
