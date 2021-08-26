@@ -5,12 +5,12 @@
 
 $('.slideInner1').slick({
     autoplay:true,
-    slidesToShow:3,
-    autoplaySpeed: 2000,
+    slidesToShow:1,
+    autoplaySpeed: 3000,
     slidesToScroll:1,
-    // centerMode:true,
-    // centerPadding:"10px",
-    arrows: false,
+    nextArrow: '<a href=""><img src="./img/next.png" alt=""></a href="">',
+    prevArrow: '<a href=""><img src="./img/prev.png" alt=""></a href="">',
+    arrows: true,
     responsive:[{
         breakpoint:801,
         settings:{
@@ -21,9 +21,9 @@ $('.slideInner1').slick({
 })
 
 $('.slideInner2').slick({
-    autoplay:false,
+    autoplay:true,
     slidesToShow:1,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     slidesToScroll:1,
     nextArrow: '<a href=""><img src="./img/next.png" alt=""></a href="">',
     prevArrow: '<a href=""><img src="./img/prev.png" alt=""></a href="">',
@@ -62,38 +62,24 @@ $(window).on('scroll', function(){
     })
 
     if (sct>=sDic0 && sct<sDic1) {
-        $(".open .bar ").css({
-            backgroundColor: '#fff'
-        })
         $('#nav').css({
             backgroundColor: 'transparent'
         })
-        $(" #mypage li").css({
-            color: "#fff"
-        })
-        $('h1').addClass('on')
     } else if (sct>=sDic1 && sct<sDic2) {
-        $(".open .bar ").css({
-            backgroundColor: '#555'
-        })
         $('#nav').css({
-            backgroundColor: '#fff',
+            backgroundColor: '#eff0f2',
         })
-        $(" #mypage li").css({
-            color: "#555"
-        })
-        $('h1').removeClass('on')
-        $('#sect2').addClass('on')  
-        
-    }  else if ( sct>=sDic2 && sct<sDic3) {  // 질문
+        $('#sect2').addClass('on') 
+    }  else if ( sct>=sDic2 && sct<sDic3) { 
         $('#sect3').addClass('on')
-       
+        
     }  else if ( sct>=sDic3 && sct<sDic4) {
         $('#sect4').addClass('on')
     }  else if ( sct>=sDic4 && sct<lastSect) {
         $('#sect5').addClass('on')
-        $('#sect6').addClass('on')
+      
     }  else if ( sct>=lastSect) {
+        $('#sect6').addClass('on')
         
     }
 })
@@ -112,17 +98,23 @@ $(window).on('scroll', function(){
 // })
 
 
+$('.depth1 li').on('click', function(e){
+    e.preventDefault()
+    if ($(this).hasClass('on')) {
+        $(this).removeClass('on') 
+    } else {
+        $(this).addClass('on')
+        $(this).siblings().removeClass('on')
+    }
+})
+
+// 햄버거 메뉴 질문
 // 햄버거메뉴 클릭 시 메뉴박스 오픈하기
 $('.open').on('click', function(){
 
    if($(this).hasClass('on')) {
     $(this).removeClass('on') 
-    // $('#nav').css({
-    //     backgroundColor: 'transparent'
-    // })
-
-    // $(this).find('i').removeClass('fa-times').addClass('fa-bars')
-   } else {
+   } else {                        
        $(this).addClass('on')
        $('#nav').css({
            backgroundColor: '#fff',
@@ -134,10 +126,6 @@ $('.open').on('click', function(){
            color: "#555"      
        })
        $('h1').removeClass('on')
-       
-       
-  
-    //    $(this).find('i').removeClass('fa-bars').addClass('fa-times')
    }
 })
 
