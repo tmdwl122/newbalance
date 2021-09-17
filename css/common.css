@@ -1,0 +1,176 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+/* font-family: 'Playfair Display', serif; */
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* font-family: 'Archivo Black', sans-serif; */
+
+html {
+    overflow-x: hidden;  
+}
+
+body {
+    font: 12px/1.6 arial;
+    color: #111;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #eff0f2;  
+    font-size: 19px;
+}
+
+/* 로고 */
+h1 {
+    position: fixed;
+    top:25px;
+    left: 60px;
+    z-index: 99;
+    width: 370px;
+    height: 100px;
+    z-index: 9;
+}
+
+.closet {
+    display: none;
+}
+
+.ham {
+    display: none;
+}
+
+/* 메뉴 */
+#nav {
+    position: fixed;
+    top:0%;
+    width: 100%;
+    background-color:transparent;
+    z-index:9999;  
+    text-align: center;       
+}
+
+#nav .depth1 > li {
+    float: left;
+    position: relative;
+    right: -26%;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 22px;
+}
+
+#nav .depth1 > li > a {
+    padding: 50px 40px 10px 40px; 
+    display: inline-block;
+}
+
+#nav .depth1 > li:nth-child(3) a {
+    margin-right:250px;
+}
+
+#nav .depth1 > li > .arrow::after {
+    padding-right: 21px;
+    content: '';
+    background: url(../img/arrow_down.png) no-repeat;
+    background-size: 15px;
+    background-position: 6px center;
+}
+
+#nav .depth2 {
+    position: absolute; top: 100%; left: 0;
+    background-color: #eff0f2; 
+    font-size:16px;
+    border: 1px solid #777;
+    width: 100%; 
+    text-align: center; 
+
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+#nav .depth2 a {
+    display: inline-block;
+    padding: 5px 0;
+}
+
+#nav .depth1 > li.on .depth2 {
+    opacity: 1; 
+  
+}
+
+#nav .depth2 a:hover {
+    text-decoration: underline;
+}
+
+/* footer */
+footer {
+    background: #111;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+footer .list {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #999;
+}
+
+footer .list ul {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0 
+}
+
+footer .list ul li {
+    float: left;
+    width: 300px;
+}
+
+footer .list ul li span {
+    display: block;
+    color: #d3d3d3;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+footer .infoBox {
+    width: 1000px;
+    margin: 0 auto;
+    color: #acacac;
+    font-size: 13px;
+    overflow: hidden;
+    padding: 60px 0;
+    word-break: keep-all;
+}
+
+.infoBox .infoL {
+    float: left;
+    width: 50%;
+}
+
+.infoBox .infoR {
+    float: left;
+    width: 50%;
+    padding-left: 40px;
+}
+
+footer .infoBox a {
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+}
+
+footer .infoBox a:hover {
+    text-decoration: underline;
+}
+
+.gotop {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 999;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.gotop.on {
+    opacity: 1;
+}

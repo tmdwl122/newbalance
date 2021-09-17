@@ -9,8 +9,10 @@
 	<link rel="stylesheet" href="./css/slick.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 	<link rel="stylesheet" href="./css/reset.css">
-	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/rwdCommon.css">
 	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/rwdIndex.css">
 	<script src="./js/jquery-1.12.4.min.js"></script>
 	<script src="./js/prefixfree.min.js"></script>
 	<script src="./js/slick.min.js"></script>
@@ -19,50 +21,61 @@
 </head>
 <body>
 	
-<!-- 네비게이션 -->
-<nav id="nav">
-		<!-- 로고 -->
-		<h1><a href="index.html"><img src="./img/logo.png" alt=""></a></h1>
-		<ul class="depth1 cf">
-			<li>
-				<a href="company.html" class="arrow">SHOP</a>
-				<ul class="depth2">
-					<li><a href="company.html">MEN</a></li>
-					<li><a href="#none">WOMEN</a></li>
-					<li><a href="#none">KIDS</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#none" class="arrow">NOTICE</a>
-				<ul class="depth2">
-					<li><a href="#none">NOTICE</a></li>
-					<li><a href="#none">EVENT</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#none">STORE</a>
-			</li>
-			<li>
-				<a href="#none">LOGIN/JOIN</a>
-			</li>
-			<li>
-				<a href="#none" class="arrow">KR</a>
-				<ul class="depth2">
-					<li><a href="#none">KR (KRW)</a></li>
-					<li><a href="#none">EN (USD)</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#none">CART</a>
-			</li>
-		</ul>
-</nav>
+<header id="header">
+		<!-- 네비게이션 -->
+		<nav id="nav">
+				<!-- 로고 -->
+				<h1><a href="index.html"><img src="./img/logo.png" alt=""></a></h1>
+				<div class="ham">
+					<a href="javascript:;"><i class="fas fa-bars"></i></a>
+				</div>
+				<div class="menu">
+					<div class="closet">
+	                    <a href="javascript:;"><i class="fas fa-times"></i></a>
+	                </div>
+					<ul class="depth1 cf">
+						<li>
+							<a href="#none" class="arrow">SHOP</a>
+							<ul class="depth2">
+								<li><a href="company.html">MEN</a></li>
+								<li><a href="#none">WOMEN</a></li>
+								<li><a href="#none">KIDS</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#none" class="arrow">NOTICE</a>
+							<ul class="depth2">
+								<li><a href="#none">NOTICE</a></li>
+								<li><a href="#none">EVENT</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#none">STORE</a>
+						</li>
+						<li>
+							<a href="login.html">LOGIN</a>
+						</li>
+						<li>
+							<a href="join.html">JOIN</a>
+						</li>
+						<li>
+							<a href="#none" class="arrow">KR</a>
+							<ul class="depth2">
+								<li><a href="#none">KR (KRW)</a></li>
+								<li><a href="#none">EN (USD)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#none">CART</a>
+						</li>
+					</ul>
+				</div>
+		</nav>
+</header>
 
-
-<!-- 
-<div class="go">
-	<a href="#"><i class="fas fa-arrow-up"></i></a>
-</div> -->
+<div class="gotop">
+	<a href="#"><img src="./img/gotop.png" alt=""></a>
+</div>
 
 <!-- 전체 페이지 -->
 <div id="wrap">
@@ -77,31 +90,31 @@
 			</div>
 			<div class="mainCol">
 				<ul>
-					<li>
+					<!-- <li>
 						<a href="#"><img src="./img/main2.jpg" alt=""></a>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat aperiam, eius repudiandae doloremque aliquam voluptatibus in, et veritatis dicta, quos deserunt labore deleniti minima eaque culpa velit asperiores similique voluptatem!</p>
-					</li>
+						<p><strong>NB LETTER PACK</strong>'New Balance'레터링을 필기체로 고급스럽게 표현한 NB Letter Pack으로 트렌디하고 여유로운 여름 스웻 셋업 룩을 완성하세요.
+							스탠다드 반팔티보다 여유로운 핏으로 편안한 착용감을 줍니다.
+						</p>
+					</li> -->
 					<li>
 						<a href="#"><img src="./img/main3.jpg" alt=""></a>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat aperiam, eius repudiandae doloremque aliquam voluptatibus in, et veritatis dicta, quos deserunt labore deleniti minima eaque culpa velit asperiores similique voluptatem!</p>
+						<p><strong>UNI 2PACK</strong><span>2021 COLLECTION</span>여름 반팔티와 레이어드하여 입기 좋은 기장감과 시원한 소재감으로 업그레이드 된 뉴발란스 레이어드 반팔티로 다양한 룩을 연출해 보세요.</p>
 					</li>
 				</ul>
 				
 			</div>
 			<div class="banner1">
-				<img src="./img/main1.jpg" alt="">
+				<!-- <img src="./img/main1.jpg" alt=""> -->
 			</div>
 		</div>
 	</section>
 	
 	<!-- 두 번째 박스 -->
 	<section id="sect2" class="cf">
-		<div class="titleBox">
-			<div class="bg"></div>
-			<h3 class="title">New Balance<br>Sports Club NBSC</h3>
-		</div>
-		
 		<div class="nbsc">
+			<div class="titleBox">
+				<h3 class="title">New Balance<span>Sports Club NBSC</span></h3>
+			</div>
 			<div class="slideOuter1">
 				<div class="slideInner1">
 					<div class="miniSld1">
@@ -115,25 +128,28 @@
 					</div>
 				</div>
 			</div>
-			<p>NB LETTER PACK</p>
-			<p>뉴발란스만의 아메리칸스포츠 헤리티지 무드의 뉴트로함을 보여주는 새로운 컬렉션, NBSC
-				클래식한 로고와 균형잡힌 드롭핏, 고밀도 레비웨이트 원단, 트렌디한 컬러웨이의 특별함을 		만나보세요
-			</p>
-			<p><a href="#">MORE</a></p>
+			<div class="classText">
+				<p><strong>2021 COLLECTION</strong></p>
+				<p class="desp">뉴발란스만의 아메리칸스포츠 헤리티지 무드의 뉴트로함을 보여주는 새로운 컬렉션,
+					NBSC 클래식한 로고와 균형잡힌 드롭핏, 고밀도 레비웨이트 원단, 트렌디한 컬러웨이의 특별함을 만나보세요.
+				</p>
+				<p class="more"><a href="#">MORE</a></p>
+			</div class="desp">
 		</div>
 		<div class="class574">
-			<div class="classText">
-				<div class="bg"></div>
-				<h4 class="title574">HISTORY<br> CLASS 574</h4>
-				<p>NB LETTER PACK</p>
-				<p>뉴발란스만의 아메리칸스포츠 헤리티지 무드의 뉴트로함을 보여주는 새로운 컬렉션, NBSC
-					클래식한 로고와 균형잡힌 드롭핏, 고밀도 레비웨이트 원단, 트렌디한 컬러웨이의 특별함을 만나보세요
-				</p>
-				<p><a href="#none">MORE</a></p>
-			</div>
-			<div class="classImg">
-				<div class="bg"></div>
-				<a href="#"><img src="./img/class574.jpg" alt=""></a>
+			<div class="classBox">
+				<div class="classImg">
+					<a href="#"><img src="./img/class574.jpg" alt=""></a>
+					<a href="#"><img src="./img/class574_2.jpg" alt=""></a>
+				</div>
+				<div class="classText">
+					<h3 class="title">HISTORY<span> CLASS 574</span></h4>
+					<p><strong>BEST ITEM</strong></p>
+					<p class="desp">70년대 헤리티지 스타일에서 영감을 받은 힐을 감싸는 러버힐과 현대적인 실루엣의 미드솔이 만나 현대적으로 재해석된 해리티지를 경험할 수 있습니다. 레트로 나일론 텅라벨과 오버사이즈 N로고, 나뉘어진 슈레이스 홀이 574만의 유니크한 디자인을 보여줍니다.
+					</p>
+					<p class="more"><a href="#none">MORE</a></p>
+				</div>
+				
 			</div>
 		</div>
 		<div class="banner2">
@@ -144,20 +160,26 @@
 	<!-- 세 번째 박스 -->
 	<section id="sect3" class="cf">
 		<div class="best">
-			<h3 class="title">Best <span>New</span></h3>
+			<h3 class="title">Best <span class="newT">New</span></h3>
 			<div class="slideOuter2">
 				<div class="slideInner2">
 							<div class="miniSld2">
-								<a href="#"><img src="./img/best1.png" alt=""></a>
-								<p>2021 SIGNATURE HOODIE [LIGHT GREY]</p>
+								<div class="imgBox">
+									<a href="#"><img src="./img/best1.png" alt=""></a>
+								</div>
+								<p>MS327LAB [LIGHT GREY] <span class="price">139,000원</span></p>
 							</div>
 							<div class="miniSld2">
-								<a href="#"><img src="./img/best2.png" alt=""></a>
-								<p>2021 SIGNATURE HOODIE [LIGHT GREY]</p>
+								<div class="imgBox">
+									<a href="#"><img src="./img/best2.png" alt=""></a>
+								</div>
+								<p>ML574BA2 [LIGHT GREY]<span class="price">99,000원</span></p>
 							</div>
 							<div class="miniSld2">
-								<a href="#"><img src="./img/best3.png" alt=""></a>
-								<p>2021 SIGNATURE HOODIE [LIGHT GREY]</p>
+								<div class="imgBox">
+									<a href="#"><img src="./img/best3.png" alt=""></a>
+								</div>
+								<p>ML725B [WHITE]<span class="price">119,000원</span></p>
 							</div>
 				</div>
 			</div>
@@ -175,45 +197,63 @@
 	
 	<!-- 네 번째 박스 -->
 	<section id="sect4" class="cf">
+		<h3 class="title"><a href="https://www.instagram.com/newbalance/" target="_blank">FOLLOW US IN INSTAGRAM</a></h3>
 		<div class="sns">
-			<h3 class="title"><a href="https://www.instagram.com/newbalance/" target="_blank">FOLLOW US IN INSTAGRAM</a></h3>
+			
 			<div class="snsImg">
 				<ul>
 					<li><a href="https://www.instagram.com/newbalance/" target="_blank"><img src="./img/sns.jpg" alt=""></a></li>
 					<li><a href="https://www.instagram.com/newbalance/" target="_blank"><img src="./img/sns3.jpg" alt=""></a></li>
 				</ul>
+				<h4><a href="https://www.instagram.com/newbalance/" target="_blank">@newbalance</a></h4>
 			</div>
 			<div class="snsImg2">
-				<h4><a href="https://www.instagram.com/newbalance/" target="_blank">@newbalance</a></h4>
 				<ul>
 					<li><a href="https://www.instagram.com/newbalance/" target="_blank"><img src="./img/sns2.jpg" alt=""></a></li>
 					<li><a href="https://www.instagram.com/newbalance/" target="_blank"><img src="./img/sns4.jpg" alt=""></a></li>
 				</ul>
 			</div>
 			
-			<div class="banner4">
-				<img src="./img/banner3.jpg" alt="">
-			</div>
+		</div>
+		<div class="banner4">
+			<img src="./img/banner3.jpg" alt="">
 		</div>
 		
 	</section>
 
-	<section id="sect5">
-		
-		
-	</section>
-
-	<section id="sect6">
-		
-		
-	</section>
 </div>
 
-<footer>
+<footer id='footer'>
+<div class="list">
+	<ul class="cf">
+		<li><a href="#none">FIND A STORE<span>매장안내</span></a></li>
+		<li><a href="#none">TEAM WEAR<span>팀 / 단체복 구매</span></a></li>
+		<li><a href="#none">MEMBER JOIN<span>회원가입</span></a></li>
+		<li><a href="#none">DOWNLOAD APP<span>App 다운로드</span></a></li>
+	</ul>
+</div>
+<div class="infoBox">
+	<div class="infoL">
+		<p><a href="#none">개인정보 처리방침</a> / 이용약관 / ㈜이랜드월드패션사업부 / 서울특별시 금천구 가산디지털1로 159 이랜드월드
+			고객상담실 (AS/오프라인) 080-999-0456, (뉴발란스) 1566-0086
+			대표 이메일 : webmaster@nbkorea.com
+			호스팅 서비스 제공자 : (주)라드씨엔에스
+		</p>
 
+	</div>
+
+	<div class="infoR">
+		<p>
+			대표이사 : 최운식 사업자등록번호 : 113-85-19030 통신판매업신고 : 금천구청 제 2005-01053
+			개인정보보호책임자 : 최운식
+			온라인디지털콘텐츠산업발전법에 의한 <a href="#none">콘텐츠보호안내 자세히보기</a>
+		</p>
+	</div>
+</div>
 </footer>
 
 <script src="./js/index.js"></script>
+<script src="./js/common.js"></script>
 </body>
 </html>
 

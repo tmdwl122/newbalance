@@ -1,28 +1,10 @@
 @charset "utf-8";
-@import url(http://fonts.googleapis.com/css?family=Righteous);
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-/* font-family: 'Playfair Display', serif; */
-/* font-family: 'Noto Sans KR', sans-serif; */
-/* font-family: 'Archivo Black', sans-serif; */
 
-html {
-    overflow-x: hidden;  
-}
-
-body {
-    font: 12px/1.6 arial;
-    color: #111;
-    font-family: 'Noto Sans KR', sans-serif;
-    background-color: #eff0f2;  
-    font-size: 19px;
-}
 
 #wrap::before {
     content: '';
     width: 1px;
-    height: 550%;
+    height: 530%;
     position: absolute;
     top: 0;
     left: 25%;
@@ -32,108 +14,34 @@ body {
 #wrap::after {
     content: '';
     width: 1px;
-    height: 550%;
+    height: 530%;
     position: absolute;
     top: 0;
     left: 49.5%;
     background-color: #b8b8b8; 
 }
 
-/* 로고 */
-h1 {
-    position: fixed;
-    top:-5px;
-    left: 60px;
-    z-index: 99;
-    width: 370px;
-    height: 100px;
-    z-index: 9;
-}
-
-/* 메뉴 */
-#nav {
-    position: fixed;
-    top:0%;
-    width: 100%;
-    background-color:transparent;
-    z-index:9999;  
-    /* width:500px; */
-    text-align: center;
-    cursor: pointer;  
-}
-
-#nav .depth1 > li {
-    display: inline-block;
-    position: relative;
-    right: -12%;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 22px;
- 
-}
-
-#nav .depth1 > li > a {
-    padding: 50px 40px 10px 40px; 
-    display: inline-block;
-}
-
-#nav .depth1 > li:nth-child(3) a {
-    margin-right: 320px;
-}
-
-#nav .depth1 > li > .arrow::after {
-    padding-right: 21px;
-    content: '';
-    background: url(../img/arrow_down.png) no-repeat;
-    background-size: 15px;
-    background-position: 6px center;
-}
-
-#nav .depth2 {
-    position: absolute; top: 100%; left: 0;
-    background-color: #eff0f2; 
-    font-size:16px;
-    border: 1px solid #777;
-    width: 100%; 
-    text-align: center; 
-
-    opacity: 0;
-    transition: all 0.3s;
-}
-
-#nav .depth2 a {
-    display: inline-block;
-    padding: 5px 0;
-}
-
-#nav .depth1 > li.on .depth2 {
-    opacity: 1; 
-  
-}
-
-#nav .depth2 a:hover {
-    text-decoration: underline;
-}
-
-
-
 section {
-    width: 100vw; 
+    /* width: 100vw;  */
     /* height: 100vh; */
     position: relative;
     z-index: 99;
 }
 
+/* sect1 시작 */
 
 #sect1 .main {
     overflow: hidden;
     position: relative;
+  
 }
+
 .main .mainText {
-    position: absolute;
+    float: left;
+    width: 55%;
     font-size: 55px;
     font-weight: bolder;
-    top: 160px;
-    left: 50px;
+    padding: 160px 0 0px 60px;
     font-family: 'Archivo Black', sans-serif;
 }
 
@@ -142,7 +50,9 @@ h3.title {
     font-weight: bold;
     font-family: 'Archivo Black', sans-serif;
 }
-
+.mainText p:nth-child(2) {
+    padding: 40px 0 35px;
+}
 .mainText p:nth-child(1):hover,
 .mainText p:nth-child(2):hover {
     color: transparent;
@@ -165,76 +75,108 @@ h3.title {
 .mainText span {
     font-size: 40px;
     display: inline-block;
-    padding-bottom: 45px;
 }
 
-/* sect1 시작 */
 #sect1 .mainCol {
     position: absolute;
-    bottom: -7%;
-    left: 7%;
+    top: 65%;
+    left: 25%;
 }
 
 #sect1 .mainCol ul li {
     display: inline-block;
     margin-right: 90px;
-    
+    font-size: 16px;
+    width: 210px;
+    text-align: right;
 }
 
 #sect1 .mainCol ul li p {
-    width: 380px;
+    width: 330px; 
+}
+
+#sect1 .mainCol ul li strong {
+    display: block;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#sect1 .mainCol ul li span {
+    display: block;
+    font-weight: bold;
 }
 
 #sect1 .mainCol ul li:last-child {
-    bottom: 100px;
+    bottom: 90px;
+    left: 20px;
     position: relative;
+    text-align: left;
 }
 
 #sect1 .banner1 {
    float: right;
    width: 45%;
+   height: 100vh;
+   position: relative;
+   background: url(../img/main1.jpg) no-repeat;
+   background-size: cover;
 }
 /* sect1 끝 */
 
 
 /* sect2 시작 */
 #sect2 {
-  z-index: 99;
-   position: relative; 
-   z-index: 999;
-}
-
-#sect2 .titleBox {
-    position: absolute;
-    top: 150px;
-    left: 25%;
-}
-
-#sect2 .titleBox .bg {
-    width: 100%;
-    height: 100%;
-    background-color: #eff0f2;
-    position: absolute; 
-    transition: all 0.8s;
-}
-
-#sect2.on .bg {
-    width: 0%
+  position: relative; 
+  z-index: 999;
 }
 
 #sect2 .nbsc {
    float: left;
-   width: 500px;
-   position: absolute;
+   width: 45%;
+   /* position: absolute;
    left: 14%;
-   top: 24%;
+   top: 9%; */
+   transform: translate(200px, 130px);
    /* transform: translateX(-200%);
    transition: all 1.4s;
    transition-delay: 0.7s */
 }
 
+.nbsc .titleBox {
+    position: relative;
+    width: 700px;
+    transform: translateX(-100%);
+    transition: all 1.3s;
+    opacity: 0;
+}
 
-.nbsc .slideInner1 .slick-arrow {
+#sect2.on .nbsc .titleBox {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.nbsc .titleBox h3 {
+    margin: 30px 0 50px 295px;
+}
+
+.nbsc .desp {
+    width: 570px;
+}
+
+.nbsc .classText {
+    width: 100%;
+    text-align: left;
+}
+
+.nbsc .classText span {
+    display: block;
+}
+
+.nbsc .slideOuter1 {
+    width: 500px;
+}
+
+/* .nbsc .slideInner1 .slick-arrow {
     position:absolute;
     bottom: 0px;
     right:-50px;
@@ -247,10 +189,60 @@ h3.title {
 .nbsc .slideInner1 .slick-arrow img {
     border: 1px solid #555;
     width: 35px;
+} */
+
+.class574  {
+    position: absolute;
+    left: 56.5px;
+    bottom: -20%;
+    overflow: hidden;
 }
 
-#sect2.on .nbsc {
-    /* transform: translateX(0%); */
+.classBox .classText {
+    width: 420px;
+    float: left;
+    transform: translateX(-100%);
+    transition: all 0.8s;
+    transition-delay: 0.7s;
+    opacity: 0;
+    text-align: right;
+    padding-right: 20px;
+    /* position: absolute;
+    left: 30px;
+    top: 74%;
+    text-align: right; */
+}
+
+#sect2.on .classBox .classText {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.classBox .classText span {
+    display: block;
+}
+
+.classBox .classImg {
+    width: 465.5px;
+    float: right;
+    overflow: hidden;
+    /* position: absolute;
+    left: 24.8%;
+    top: 75%;
+    overflow: hidden;
+    border: 1px solid #888; */
+}
+
+.class574 .classImg img {
+    transition: all 0.5s;
+}
+
+.class574 .classImg img:hover {
+    transform: scale(1.05);
+}
+
+.class574 .classImg a:nth-child(2) {
+    display: none;
 }
 
 #sect2 .banner2 {
@@ -258,59 +250,33 @@ h3.title {
     width: 45%;
 }
 
-.class574 .classText {
-    width: 420px;
-    position: absolute;
-    left: 30px;
-    top: 74%;
+#sect2 strong {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#sect2 .desp {
+    font-size: 18px;
+}
+
+#sect2 .more {
+    font-size: 17px;
+    color: #fff;
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+#sect2 .more a {
+    display: inline-block;
+    padding: 10px 20px;  
+    background-color: #000; 
+    border-radius: 25px;
+}
+
+#sect2 .class574 .more {
     text-align: right;
 }
-
-#sect2 .classText .bg {
-    width: 100%;
-    height: 100%;
-    background-color: #eff0f2;
-    position: absolute; 
-    transition: all 1.3s;
-    transition-delay: 0.7s;
-}
-
-#sect2.on .bg {
-    width: 0%
-}
-
-.class574 .classText .title574 {
-    font-size: 38px;
-    font-weight: bold;
-    font-family: 'Archivo Black', sans-serif;
-}
-
-.class574 .classImg {
-    width: 465.5px;
-    position: absolute;
-    left: 24.8%;
-    top: 75%;
-    overflow: hidden;
-    transition: all 0.5s;
-    border: 1px solid #888;
-}
-
-.class574 .classImg img:hover {
-    transform: scale(1.2);
-}
-
-/* .classImg .bg {
-    width: 100%;
-    height: 100%;
-    background-color: #eff0f2;
-    position: absolute; 
-    transition: all 1.3s;
-    transition-delay: 1s;
-}
-
-#sect2.on .bg {
-    width: 0%
-} */
 
 /* sect2 끝 */
 
@@ -323,11 +289,13 @@ h3.title {
 .best {
     font-size: 20px;
     text-align: left;
-    position: absolute;
+    /* position: absolute;
     left: 5%;
-    top: 34%;
+    top: 34%; */
     float: left;
     width: 475px;
+    transform: translate(95px,430px);
+    /* margin: 430px 0 0 95px */
 }
 
 .best h3{
@@ -338,7 +306,7 @@ h3.title {
     transition: all 1s;
 }
 
-.best span {
+.best .newT {
     color: transparent;
     -webkit-text-stroke: 1px #000;
 }
@@ -348,21 +316,34 @@ h3.title {
     opacity: 1;
 }
 
-.best .slideOuter2 img{
+.slick-arrow img {
     border: 1px solid #555;
 }
-.miniSld2 {
+
+.miniSld2 .imgBox{
     overflow: hidden;
+    border: 1px solid #555;
 }
+
+.miniSld2 img {
+    transition: all 0.8s;
+}
+
 .miniSld2 img:hover {
     transform: scale(1.1);
+}
+
+.miniSld2 .price {
+    color: #777;
+    font-size: 14px;
+    padding-left: 4px;
 }
 
 .best .icon {
     color: #fff;
     text-align: center;
     width: 85px;
-    height: 85x;
+    height: 85px;
     line-height: 85px;
     border-radius: 50%;
     background-color: #000;
@@ -375,6 +356,7 @@ h3.title {
     top: 22%;
     right: 20px;
 }
+
 .best .newi{
     color: #000;
     background-color: #fff;
@@ -393,7 +375,15 @@ h3.title {
 /* sect4 시작 */
 #sect4 {
     position: relative;
+    overflow: hidden;
 }
+
+#sect4 .sns {
+    float: left;
+    width: 55%;
+    transform: translate(285px, 260px);
+}
+
 #sect4 h3 {
     writing-mode:vertical-lr;
     position: absolute;
@@ -402,22 +392,18 @@ h3.title {
     z-index: 99
 }
 
-
-
 #sect4 h3:hover {
     color: transparent;
     -webkit-text-stroke: 1px #000;
 }
+
 #sect4 .snsImg {
-    /* overflow: hidden;float: left;
-    width: 45%; */
     position: absolute;
-    top:50px;
-    left: 30%;
+    top:-200px;
+    left: 27.5%;
     transform: translateY(100%);
     transition: all 1.3s;
     opacity: 0;
-   
 }
 
 #sect4 .snsImg ul li,
@@ -427,11 +413,9 @@ h3.title {
 }
 
 #sect4 .snsImg2 {
-    /* overflow: hidden;float: left;
-    width: 45%; */
     position: absolute;
-    top:250px;
-    left: 15%;
+    /* top:250px; */
+    /* left: 15%; */
     transform: translateY(-100%);
     transition: all 1.3s;
     opacity: 0;
@@ -440,14 +424,21 @@ h3.title {
 #sect4.on .snsImg {
     transform: translateY(0%);
     opacity: 1;
+    z-index: 9;
 }
 
-#sect4 .snsImg2 h4 {
+#sect4 .snsImg h4 a {
     font-weight: bold;
     font-size: 25px;
+    border: 1px solid #222;
+    padding: 8px 15px;
+    width: 210px;
+    display: inline-block;
+    border-radius: 30px;
+    margin-top: 15px;
 }
 
-#sect4 .snsImg2 h4:hover {
+#sect4 .snsImg h4 a:hover {
     text-decoration: underline;
 }
 
@@ -455,8 +446,6 @@ h3.title {
     transform: translateY(0%);
     opacity: 1;
 }
-
-
 
 #sect4 .banner4 {
     float: right;
@@ -466,36 +455,3 @@ h3.title {
 
 
 
-/* sect5 시작 */
-
-
-
-/* sect6 시작 */
-
-/* sect6 끝 */
-
-
-
-
-footer {
-    padding: 100px;
-    background: rgb(22, 22, 22);
-   width: 100vw;
-}
-
-
-
-.gotop {
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    font-size: 20px;
-    color: #000;
-    z-index: 999;
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-.gotop.on {
-    opacity: 1;
-}
