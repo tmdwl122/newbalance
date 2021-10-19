@@ -1,36 +1,47 @@
 @charset "utf-8";
-
-#wrap::before {
-    content: none
-}
-
-#wrap::after {
-    content: none
+h1{
+    background: url(../img/logo.png) no-repeat;
 }
 
 #nav {
-    background-color: #eff0f2;
-    border-bottom: 1px solid #555
+    background-color: #fff;
 }
 
-.loginForm { 
-    width:550px; 
-    margin:240px auto 0px
+#nav .open .bar {
+    width: 24px;
+    height: 2px;
+    background-color: #555;
+    position: absolute;
+    transition: all 0.4s;
 }
 
-.loginForm p { 
+#mypage li {
+    font-size: 20px;
+    color: #555;
+    margin-top: 20px;
+}
+
+
+/* loginform */
+.row { 
+    max-width:550px; 
+    margin:240px auto 0px;
+}
+
+.loginForm .input p { 
     position:relative; 
     margin:37px 0 24px; 
 }
 
 .loginForm .logintext {
     margin: 15px 0 60px;
+    font-size: 15px;
 }
 
 .loginForm legend {
     display: block;
-    font-family: 'Archivo Black', sans-serif;
-    font-weight: 600;
+    font-family: 'Playfair Display', serif; 
+    font-weight: bold;
     font-size: 30px;
     color: #3b3834;
 }
@@ -43,32 +54,32 @@
     outline:none;
     font-size: 15px;
 }
-
-.loginForm .btn { 
-    text-align:center;
-    display: flex;
-    
-
+.loginForm .btn {
+    overflow: hidden; 
+    padding-top: 20px;
 }
 
 .loginForm button { 
+    text-align:center;
+    font-size: 16px;
+    float: left;
     width:49%; 
     margin-right: 5px;
     height:44px; 
     background-color:#33312d; 
     color: white;
     border:none;
-    font-size: 15px;
+    transition: all 0.3s;
 }
 
 .loginForm button:last-child {
     margin-right: 0px;
 }
 
-.loginForm .find {
-    margin: -10px 0 20px;
+.loginForm p.find {
+    padding: 10px 0 0px;
     font-size: 15px;
-    color: #777
+    color: #777;
 }
 
 .loginForm .find a {
@@ -126,31 +137,23 @@
 
 
 @media screen and (max-width:800px) {
-  
-    .loginForm { 
-        width:550px; 
-        margin:200px auto 0px;
-        padding: 0 40px;
+    .login_wrap {
+        padding-left: 100px;
+    }
+    h1 {
+        background-size: 40px;
+    }
+
+    .loginForm .btn {
+        width:520px; 
     }
 
     .login_wrap .login_list li {
         float: left;
-        width: 100%;
+        width:520px; 
     }
 
     .login_wrap .login_list li a {
         width: 100%;
-    }
-
-    .login_list { 
-        width:550px; 
-        margin:30px auto 130px;
-        overflow: hidden;
-        padding: 0 40px;
-    }
-
-    #nav {
-        background-color: #eff0f2;
-        border-bottom: 1px solid #555;
     }
 }

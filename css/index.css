@@ -1,457 +1,488 @@
 @charset "utf-8";
 
 
-#wrap::before {
-    content: '';
-    width: 1px;
-    height: 530%;
-    position: absolute;
-    top: 0;
-    left: 25%;
-    background-color: #b8b8b8; 
-}
-
-#wrap::after {
-    content: '';
-    width: 1px;
-    height: 530%;
-    position: absolute;
-    top: 0;
-    left: 49.5%;
-    background-color: #b8b8b8; 
-}
-
-section {
-    /* width: 100vw;  */
-    /* height: 100vh; */
-    position: relative;
-    z-index: 99;
-}
-
 /* sect1 시작 */
-
-#sect1 .main {
+.mainimg .vid {  
+    width: 100vw;
+    height: 100vh; 
     overflow: hidden;
-    position: relative;
-  
+
 }
 
-.main .mainText {
-    float: left;
-    width: 55%;
-    font-size: 55px;
-    font-weight: bolder;
-    padding: 160px 0 0px 60px;
-    font-family: 'Archivo Black', sans-serif;
-}
-
-h3.title {
-    font-size: 38px;
-    font-weight: bold;
-    font-family: 'Archivo Black', sans-serif;
-}
-.mainText p:nth-child(2) {
-    padding: 40px 0 35px;
-}
-.mainText p:nth-child(1):hover,
-.mainText p:nth-child(2):hover {
-    color: transparent;
-    -webkit-text-stroke: 1px #000;
-}
-
-.mainText p:nth-child(3) {
-    font-size: 28px;
-    font-family: 'Georama', sans-serif;
-    font-weight: 600;
-}
-
-.mainText p:nth-child(3)::after {
-    padding-right: 40px;
-    content: '';
-    background: url(../img/arrow_right.png) no-repeat;
-    background-position: 17px center;
-}
-
-.mainText span {
-    font-size: 40px;
-    display: inline-block;
-}
-
-#sect1 .mainCol {
+.mainimg {position: relative;}
+.mainimg .text {
     position: absolute;
-    top: 65%;
-    left: 25%;
-}
-
-#sect1 .mainCol ul li {
-    display: inline-block;
-    margin-right: 90px;
-    font-size: 16px;
-    width: 210px;
-    text-align: right;
-}
-
-#sect1 .mainCol ul li p {
-    width: 330px; 
-}
-
-#sect1 .mainCol ul li strong {
-    display: block;
-    font-size: 23px;
-    font-weight: bold;
-}
-
-#sect1 .mainCol ul li span {
-    display: block;
-    font-weight: bold;
-}
-
-#sect1 .mainCol ul li:last-child {
-    bottom: 90px;
-    left: 20px;
-    position: relative;
+    top: 70%;  left:150px; 
+    color: #fff;
     text-align: left;
+    font-family: 'Playfair Display', serif;
+}
+.mainimg .text > p {
+    font-size:  14px;
+    margin-bottom:10px;
+    color: rgba(255,255,255,0.8);
 }
 
-#sect1 .banner1 {
-   float: right;
-   width: 45%;
-   height: 100vh;
-   position: relative;
-   background: url(../img/main1.jpg) no-repeat;
-   background-size: cover;
+.mainimg .text > h2 {
+    font-size:  55px;
+    font-weight: bold;
+}
+
+.mainimg .text > h3 {
+    font-weight: 500;
+    font-size:  20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom:35px;
+}
+
+.mainimg .text > a  {
+    font-size:  16px;
+    text-decoration: underline;
+}
+
+.mainimg .text > a:hover {
+    text-decoration: none;
 }
 /* sect1 끝 */
 
 
 /* sect2 시작 */
+/* Gallery */
+
 #sect2 {
-  position: relative; 
-  z-index: 999;
+    padding: 0px;
 }
-
-#sect2 .nbsc {
-   float: left;
-   width: 45%;
-   /* position: absolute;
-   left: 14%;
-   top: 9%; */
-   transform: translate(200px, 130px);
-   /* transform: translateX(-200%);
-   transition: all 1.4s;
-   transition-delay: 0.7s */
-}
-
-.nbsc .titleBox {
-    position: relative;
-    width: 700px;
-    transform: translateX(-100%);
-    transition: all 1.3s;
-    opacity: 0;
-}
-
-#sect2.on .nbsc .titleBox {
-    transform: translateX(0%);
-    opacity: 1;
-}
-
-.nbsc .titleBox h3 {
-    margin: 30px 0 50px 295px;
-}
-
-.nbsc .desp {
-    width: 570px;
-}
-
-.nbsc .classText {
-    width: 100%;
-    text-align: left;
-}
-
-.nbsc .classText span {
-    display: block;
-}
-
-.nbsc .slideOuter1 {
-    width: 500px;
-}
-
-/* .nbsc .slideInner1 .slick-arrow {
-    position:absolute;
-    bottom: 0px;
-    right:-50px;
-}
-
-.nbsc .slideInner1 .slick-arrow:last-child {
-    right: -100px;
-}
-
-.nbsc .slideInner1 .slick-arrow img {
-    border: 1px solid #555;
-    width: 35px;
-} */
-
-.class574  {
-    position: absolute;
-    left: 56.5px;
-    bottom: -20%;
+.slideOuter1 { 
+    padding: 80px 10px 50px 100px;
+    color: #111; 
     overflow: hidden;
 }
 
-.classBox .classText {
-    width: 420px;
-    float: left;
-    transform: translateX(-100%);
-    transition: all 0.8s;
-    transition-delay: 0.7s;
-    opacity: 0;
-    text-align: right;
-    padding-right: 20px;
-    /* position: absolute;
-    left: 30px;
-    top: 74%;
-    text-align: right; */
-}
-
-#sect2.on .classBox .classText {
-    transform: translateX(0%);
-    opacity: 1;
-}
-
-.classBox .classText span {
-    display: block;
-}
-
-.classBox .classImg {
-    width: 465.5px;
-    float: right;
-    overflow: hidden;
-    /* position: absolute;
-    left: 24.8%;
-    top: 75%;
-    overflow: hidden;
-    border: 1px solid #888; */
-}
-
-.class574 .classImg img {
-    transition: all 0.5s;
-}
-
-.class574 .classImg img:hover {
-    transform: scale(1.05);
-}
-
-.class574 .classImg a:nth-child(2) {
-    display: none;
-}
-
-#sect2 .banner2 {
-    float: right;
-    width: 45%;
-}
-
-#sect2 strong {
-    font-size: 22px;
+h2.cateText {
+    font-size:  45px;
     font-weight: bold;
-}
-
-#sect2 .desp {
-    font-size: 18px;
-}
-
-#sect2 .more {
-    font-size: 17px;
-    color: #fff;
-    width: 100%;
+    font-family: 'Playfair Display', serif;
+    padding: 0 0 3px 10px;
+    color: #111;
     text-align: left;
-    margin-top: 20px;
 }
 
-#sect2 .more a {
+.slideOuter1> h3 {
+    font-weight: 500;
+    font-size:  20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-left: 10px 
+}
+
+.shopText {
+    font-size:  16px;
+    text-decoration: underline;
     display: inline-block;
-    padding: 10px 20px;  
-    background-color: #000; 
-    border-radius: 25px;
+    padding: 30px 0 0px 15px;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
 }
 
-#sect2 .class574 .more {
-    text-align: right;
+.shopText:hover {
+    text-decoration: none;
 }
+
+.slideOuter1 > a {
+    padding-top: 40px;
+}
+
+.miniSld img { 
+    width:100%; 
+}
+
+.prodName {
+    font-size: 18px;
+    font-weight: 500;
+    word-spacing: 2px;
+    padding-bottom: 3px 
+}
+
+.pricName {
+    font-size: 16px;
+    color: #757575;
+    font-weight: 400;
+}
+
+.miniSld img:hover {
+    opacity: 0.7;
+}
+
+.slideInner1 { 
+    position:relative;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 2s;
+}
+
+#sect2.on .slideInner1 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slideInner1 .slick-slide {
+    transform: scale(0.95);
+    transition: all 0.5s;
+  }
 
 /* sect2 끝 */
 
 
 /* sect3 시작 */
-#sect3 {
-    position: relative;
+.collection {
+    padding: 0px 50px 0 120px;
+    width: 100%;
+    /* height: 100vh; */
+    overflow: hidden;
 }
 
-.best {
-    font-size: 20px;
-    text-align: left;
-    /* position: absolute;
-    left: 5%;
-    top: 34%; */
-    float: left;
-    width: 475px;
-    transform: translate(95px,430px);
-    /* margin: 430px 0 0 95px */
+.collection .cateText,
+.collection .shopText {
+    padding-left: 120px;
 }
 
-.best h3{
-    text-align: right;
-    font-size: 50px;
-    transform: translateY(100%);
+.collection h3 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 42px;
+}
+
+.collection p {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.collection .coButton a {
+    background-color: #111;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: all 0.5s;
+    display: inline-block;
+}
+
+.collection .coButton a:hover {
+    background-color: #fff;
+    color: #111;
+    border: 1px solid #111;
+}
+
+.slideOuter2 { 
+    /* position:relative; */
+    padding: 60px 30px 190px 40px;
     opacity: 0;
+    transform: translateY(60%);
     transition: all 1s;
+    text-align: center;
 }
 
-.best .newT {
-    color: transparent;
-    -webkit-text-stroke: 1px #000;
+#sect3.on .slideOuter2 {
+    opacity: 1;
+    transform: translateY(0); 
 }
 
-#sect3.on h3 {
-    transform: translateY(0%);
+.slideInner2 .slick-arrow {
+    position:absolute;
+    bottom: -70px;
+    right: 110px;
     opacity: 1;
 }
 
-.slick-arrow img {
-    border: 1px solid #555;
+.slideInner2 .slick-arrow:last-child {
+    right: 40px;
 }
 
-.miniSld2 .imgBox{
-    overflow: hidden;
-    border: 1px solid #555;
+.mcol {
+    display: none;
 }
 
-.miniSld2 img {
-    transition: all 0.8s;
-}
-
-.miniSld2 img:hover {
-    transform: scale(1.1);
-}
-
-.miniSld2 .price {
-    color: #777;
-    font-size: 14px;
-    padding-left: 4px;
-}
-
-.best .icon {
-    color: #fff;
-    text-align: center;
-    width: 85px;
-    height: 85px;
-    line-height: 85px;
-    border-radius: 50%;
-    background-color: #000;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-.besti {
-    position: absolute;
-    top: 22%;
-    right: 20px;
-}
-
-.best .newi{
-    color: #000;
-    background-color: #fff;
-    position: absolute;
-    top: 36%;
-    right: 20px;
-}
-
-#sect3 .banner3 {
-    float: right;
-    width: 45%;
-}
-/* sect3 끝 */
 
 
 /* sect4 시작 */
-#sect4 {
-    position: relative;
-    overflow: hidden;
+#sect4 .shopText {
+    /* display: block; */
+    padding-bottom: 20px;
 }
 
-#sect4 .sns {
+.best { 
+    padding: 0px 0px 0 300px;
+    /* display: flex; */overflow: hidden;
+}
+
+
+.best .bestLeft {
     float: left;
-    width: 55%;
-    transform: translate(285px, 260px);
+    font-size: 15px;
+    width: 32%;
+    /* margin-right: 15px; */
+      /* flex: 1; */
 }
 
-#sect4 h3 {
-    writing-mode:vertical-lr;
-    position: absolute;
-    left: 46%;
-    top:180px;
-    z-index: 99
+
+.best .bestLeft p:last-child {
+    font-size: 13px;
 }
 
-#sect4 h3:hover {
-    color: transparent;
-    -webkit-text-stroke: 1px #000;
-}
-
-#sect4 .snsImg {
-    position: absolute;
-    top:-200px;
-    left: 27.5%;
-    transform: translateY(100%);
-    transition: all 1.3s;
-    opacity: 0;
-}
-
-#sect4 .snsImg ul li,
-#sect4 .snsImg2 ul li {
-    padding: 5px;
-    width: 70%;  
-}
-
-#sect4 .snsImg2 {
-    position: absolute;
-    /* top:250px; */
-    /* left: 15%; */
-    transform: translateY(-100%);
-    transition: all 1.3s;
-    opacity: 0;
-}
-
-#sect4.on .snsImg {
-    transform: translateY(0%);
-    opacity: 1;
-    z-index: 9;
-}
-
-#sect4 .snsImg h4 a {
-    font-weight: bold;
-    font-size: 25px;
-    border: 1px solid #222;
-    padding: 8px 15px;
-    width: 210px;
-    display: inline-block;
-    border-radius: 30px;
-    margin-top: 15px;
-}
-
-#sect4 .snsImg h4 a:hover {
-    text-decoration: underline;
-}
-
-#sect4.on .snsImg2 {
-    transform: translateY(0%);
-    opacity: 1;
-}
-
-#sect4 .banner4 {
+.best .bestRight {
     float: right;
+    width: 62%;
+    padding: 0px 100px 0px 0;
+    overflow: hidden;
+    /* flex: 2;
+    display: flex;
+    flex-wrap: wrap; */
+}
+
+.bestRight .img {
     width: 45%;
+    padding:  10px 0px 0 0;
+    /* overflow: hidden; */
+    /* flex:2; */
+    display: inline-block
+}
+
+.imgbox {
+    overflow: hidden;
+    
+}
+
+.bestRight .img .imgbox {
+    width: 87%;
+}
+
+.imgbox img {
+    transition: all 0.5s;
+}
+
+.imgbox img:hover {
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+
+.bestRight p {
+    /* float: left; */
+    font-size: 15px;
+}
+
+.bestRight p:last-child {
+    /* float: right; */
+    font-size: 13px;
+}
+
+.best img:hover{
+    opacity: 0.6;
+}
+
+
+
+
+#sect4 .bestLeft {
+    transition: all 1.2s;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+#sect4.on .bestLeft {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#sect4 .bestRight div {
+    transition: all 1.2s;
+    transform: translateY(-100%);
+    transition-delay: 0.5s;
+    opacity: 0;
+}
+
+#sect4.on .bestRight div {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+#sect4 .bestRight div:nth-child(3),
+#sect4 .bestRight div:nth-child(4) {
+    transition: all 1.2s;
+    transform: translateY(100%);
+    transition-delay: 0.8s;
+    opacity: 0;
+}
+
+#sect4.on .bestRight div:nth-child(3),
+#sect4.on .bestRight div:nth-child(4) {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.slideOuter3 {
+    display: none;
 }
 /* sect4 끝 */
 
 
+
+/* sect5 시작 */
+#sect5 h2 {
+    margin: 0px 0 10px 70px;
+}
+
+.nbNow {
+   overflow: hidden;
+   padding: 20px 0 100px 320px;
+   text-align: center;
+   font-size: 16px;
+   margin: 0 auto;
+}
+
+.nbNow div:last-child {
+    margin-top: 50px;
+}
+.nbNow div:last-child .bg {
+    transition-delay: 0.4s;
+}
+
+.nbNow .nowBox {
+    float: left;
+    width: 550px;
+    padding-left: 60px;
+}
+
+.nowBox h3 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 31px;
+}
+
+.nowBox p {
+    font-size: 18px;
+    padding: 0px 0 20px;
+}
+
+.nowBox .more a {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.nowBox .more a:hover {
+    background-color: #fff;
+    color:#111;
+    border: 1px solid #111;
+}
+
+.nowBox .imgBox {
+    position: relative;
+    padding-bottom: 20px
+}
+/* .nowBox img {
+    width: 0%;
+    transition: all 1s;
+
+} */
+.nowBox .bg {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute; 
+    transition: all 1.3s;
+}
+
+#sect5.on .bg {
+    width: 0%
+}
+
+.now2 {
+    display: block;
+}
+
+#sect5 span {
+    display: block;
+}
+
+
+/* sect6 시작 */
+#sect6 {
+    height: 770px;
+    margin-top: 100px;
+} 
+.sns {
+    overflow: hidden;
+    background: #ececec; 
+    position: relative;
+    font-size: 18px;
+}
+
+.snsImg a {
+    z-index: 99;
+    position: relative;
+    top:0;
+    left: 80px;
+}
+
+.snsText {
+    position: absolute;
+    top: 40px;
+    left: 38%;
+    z-index: 99;
+ }
+
+.snsText a {
+    color: #7294cc;
+    /* font-family: 'Playfair Display', serif; */
+    text-decoration: underline;
+    font-size: 16px;
+    display: inline-block;
+    padding-top: 40px;
+}
+
+.snsText a:hover {
+    text-decoration: none;
+}
+
+.miniSns a {
+    position: absolute;
+    top: 32%;
+    right: 10%;
+    z-index: 9;
+}
+
+.miniSns a:nth-child(2) {
+    top: 62%;
+    right: 0%;
+    z-index: 9
+}
+
+.miniSns a:nth-child(3) {
+    top: 62%;
+    right: 33%;
+    z-index: 9
+}
+
+.miniSns a:nth-child(4) {
+    top: 42%;
+    right: -28%;
+    z-index: 9;
+}
+
+.miniSns a:nth-child(5) {
+    top: 32%;
+    right: -32%;
+    z-index: 9;
+}
+
+#sect6.on .miniSns a {
+    animation: sns 65s both infinite linear;
+}
+
+@keyframes sns {
+    0% {transform: translateX(0%); }
+    10% {}
+    100% {transform: translateX(-280%);}
+}
+/* sect6 끝 */
 

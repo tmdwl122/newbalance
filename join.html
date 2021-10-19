@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="./img/faicon.png">
+
 <link rel="stylesheet" href="./css/jquery-ui.css">
 <link rel="stylesheet" href="./css/reset.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
@@ -19,61 +21,67 @@
 </head>
 
 <body>
-<header id="header">
-		<!-- 네비게이션 -->
-		<nav id="nav">
-				<!-- 로고 -->
-				<h1><a href="index.html"><img src="./img/logo.png" alt=""></a></h1>
-				<div class="ham">
-					<a href="javascript:;"><i class="fas fa-bars"></i></a>
-				</div>
-				<div class="menu">
-					<div class="closet">
-	                    <a href="javascript:;"><i class="fas fa-times"></i></a>
-	                </div>
-					<ul class="depth1 cf">
-						<li>
-							<a href="#none" class="arrow">SHOP</a>
-							<ul class="depth2">
-								<li><a href="company.html">MEN</a></li>
-								<li><a href="#none">WOMEN</a></li>
-								<li><a href="#none">KIDS</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#none" class="arrow">NOTICE</a>
-							<ul class="depth2">
-								<li><a href="#none">NOTICE</a></li>
-								<li><a href="#none">EVENT</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#none">STORE</a>
-						</li>
-						<li>
-							<a href="login.html">LOGIN</a>
-						</li>
-						<li>
-							<a href="join.html">JOIN</a>
-						</li>
-						<li>
-							<a href="#none" class="arrow">KR</a>
-							<ul class="depth2">
-								<li><a href="#none">KR (KRW)</a></li>
-								<li><a href="#none">EN (USD)</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#none">CART</a>
-						</li>
+<div id="nav">
+		<!-- 로고 -->
+		<a href="index.html"><h1></h1></a>
+		
+		<!-- 햄버거메뉴 -->
+		<div class="open">
+			<!-- <i class="fas fa-bars"></i> -->
+			<span class="bar bar1"></span>
+			<span class="bar bar2"></span>
+			<span class="bar bar3"></span>
+			<span class="blind">메뉴열기</span>
+		</div>
+		
+		<div class="openlist cf">
+			<ul class="list1">
+				<li>
+					<a href="javascript:;">SHOP</a>
+					<ul class="list2">
+						<li><a href="product.html">MEN</a></li>
+						<li><a href="javascript:;">WOMEN</a></li>
+						<li><a href="javascript:;">KIDS</a></li>
 					</ul>
-				</div>
-		</nav>
-</header>
-
-<div class="gotop">
-	<a href="#"><img src="./img/gotop.png" alt=""></a>
+				</li>
+					
+				<li>
+					<a href="javascript:;">STORE</a>
+				</li>
+				<li>
+					<a href="notice.html">NOTICE</a>
+				</li>
+				<li>
+					<a href="javascript:;">NB&YOU</a>
+					<ul class="list2">
+						<li><a href="javascript:;">UPDATE</a></li>
+						<li><a href="javascript:;">NB GUIDE</a></li>
+						<li><a href="javascript:;">LOOK SHOP</a></li>
+						<li><a href="javascript:;">NB TAG</a></li>
+						<li><a href="javascript:;">EVENT</a></li>
+					</ul>
+				</li>
+					
+			</ul>
+	
+			<ul class="login">
+				<li><a href="login.html">LOGIN</a></li>
+				<li><a href="join.html">JOIN</a></li>
+			</ul>
+				
+	
+		</div>
+		
+		
+		<!-- 마이페이지 -->
+		<ul id="mypage">
+			<li><a href="login.html"><i class="far fa-user"></i></a></li>
+			<li><a href="#"><i class="fas fa-search"></i></a></li>
+			<li><a href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
+		</ul>
 </div>
+
+
 <!-- wrap -->
 <div id="wrap">
 	<div id="container">
@@ -139,10 +147,11 @@
 							</div>
 						</li>
 					</ul>
+					<p class="btn_line">
+						<button type="submit" class="btn">회원가입</button>
+					</p>
 				</fieldset>
-				<p class="btn_line">
-					<button type="submit" class="btn">회원가입</button>
-				</p>
+				
 			</form>
 			<!-- //appForm -->
 			
@@ -155,14 +164,6 @@
 <!-- //wrap -->
 
 <footer id='footer'>
-	<div class="list">
-		<ul class="cf">
-			<li><a href="#none">FIND A STORE<span>매장안내</span></a></li>
-			<li><a href="#none">TEAM WEAR<span>팀 / 단체복 구매</span></a></li>
-			<li><a href="#none">MEMBER JOIN<span>회원가입</span></a></li>
-			<li><a href="#none">DOWNLOAD APP<span>App 다운로드</span></a></li>
-		</ul>
-	</div>
 	<div class="infoBox">
 		<div class="infoL">
 			<p><a href="#none">개인정보 처리방침</a> / 이용약관 / ㈜이랜드월드패션사업부 / 서울특별시 금천구 가산디지털1로 159 이랜드월드

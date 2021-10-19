@@ -1,18 +1,28 @@
 ﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
+	<title>뉴발란스 온라인스토어</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
-	<title>뉴발란스 온라인스토어</title>
+	<meta property="og:url" content="http://tmdl122.dothome.co.kr/newbalance/">
+	<meta property="og:image" content="./img/snsimg.jpg">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="NEW BALANCE">
+	<meta property="og:local" content="ko">
+	<meta property="og:title" content="NEW BALANCE">
+	<meta property="og:desciption" content="뉴발란스 공식 온라인스토어">
+
+	<link rel="shortcut icon" href="./img/faicon.png">
+	<link rel="apple-touch-icon" href="./img/ticon.png">
+
 	<link rel="stylesheet" href="./css/slick.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/common.css">
-	<link rel="stylesheet" href="./css/rwdCommon.css">
 	<link rel="stylesheet" href="./css/index.css">
 	<link rel="stylesheet" href="./css/rwdIndex.css">
+	<link rel="stylesheet" href="./css/rwdCommon.css">
 	<script src="./js/jquery-1.12.4.min.js"></script>
 	<script src="./js/prefixfree.min.js"></script>
 	<script src="./js/slick.min.js"></script>
@@ -21,57 +31,65 @@
 </head>
 <body>
 	
-<header id="header">
-		<!-- 네비게이션 -->
-		<nav id="nav">
-				<!-- 로고 -->
-				<h1><a href="index.html"><img src="./img/logo.png" alt=""></a></h1>
-				<div class="ham">
-					<a href="javascript:;"><i class="fas fa-bars"></i></a>
-				</div>
-				<div class="menu">
-					<div class="closet">
-	                    <a href="javascript:;"><i class="fas fa-times"></i></a>
-	                </div>
-					<ul class="depth1 cf">
-						<li>
-							<a href="#none" class="arrow">SHOP</a>
-							<ul class="depth2">
-								<li><a href="company.html">MEN</a></li>
-								<li><a href="#none">WOMEN</a></li>
-								<li><a href="#none">KIDS</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#none" class="arrow">NOTICE</a>
-							<ul class="depth2">
-								<li><a href="#none">NOTICE</a></li>
-								<li><a href="#none">EVENT</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#none">STORE</a>
-						</li>
-						<li>
-							<a href="login.html">LOGIN</a>
-						</li>
-						<li>
-							<a href="join.html">JOIN</a>
-						</li>
-						<li>
-							<a href="#none" class="arrow">KR</a>
-							<ul class="depth2">
-								<li><a href="#none">KR (KRW)</a></li>
-								<li><a href="#none">EN (USD)</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#none">CART</a>
-						</li>
-					</ul>
-				</div>
-		</nav>
-</header>
+<div id="nav">
+	<!-- 로고 -->
+	<a href="index.html"><h1></h1></a>
+	
+	<!-- 햄버거메뉴 -->
+	<div class="open">
+		<!-- <i class="fas fa-bars"></i> -->
+		<span class="bar bar1"></span>
+		<span class="bar bar2"></span>
+		<span class="bar bar3"></span>
+		<span class="blind">메뉴열기</span>
+	</div>
+	
+	<div class="openlist cf">
+		<ul class="list1">
+			<li>
+				<a href="javascript:;">SHOP</a>
+				<ul class="list2">
+					<li><a href="product.html">MEN</a></li>
+					<li><a href="javascript:;">WOMEN</a></li>
+					<li><a href="javascript:;">KIDS</a></li>
+				</ul>
+			</li>
+				
+			<li>
+				<a href="javascript:;">STORE</a>
+			</li>
+			<li>
+				<a href="notice.html">NOTICE</a>
+			</li>
+			<li>
+				<a href="javascript:;">NB&YOU</a>
+				<ul class="list2">
+					<li><a href="javascript:;">UPDATE</a></li>
+					<li><a href="javascript:;">NB GUIDE</a></li>
+					<li><a href="javascript:;">LOOK SHOP</a></li>
+					<li><a href="javascript:;">NB TAG</a></li>
+					<li><a href="javascript:;">EVENT</a></li>
+				</ul>
+			</li>
+				
+		</ul>
+
+		<ul class="login">
+			<li><a href="login.html">LOGIN</a></li>
+			<li><a href="join.html">JOIN</a></li>
+		</ul>
+			
+
+	</div>
+	
+	
+	<!-- 마이페이지 -->
+	<ul id="mypage">
+		<li><a href="login.html"><i class="far fa-user"></i></a></li>
+		<li><a href="#"><i class="fas fa-search"></i></a></li>
+		<li><a href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
+	</ul>
+</div>
 
 <div class="gotop">
 	<a href="#"><img src="./img/gotop.png" alt=""></a>
@@ -82,178 +100,225 @@
 
 	<!-- 첫 번째 박스 -->
 	<section id="sect1">
-		<div class="main">
-			<div class="mainText">
-				<p><a href="#">21PRE-FALL <span>ARRIVAL</span></a></p>
-				<p><a href="#">21PRE-WINTER <span>ARRIVAL</span></a></p>
-				<p><a href="#">Shop Now</a></p>
+		<div class="mainimg">
+			<div class="vid">
+				<video src="./img/vid.mp4" autoplay muted loop center></video>
 			</div>
-			<div class="mainCol">
-				<ul>
-					<!-- <li>
-						<a href="#"><img src="./img/main2.jpg" alt=""></a>
-						<p><strong>NB LETTER PACK</strong>'New Balance'레터링을 필기체로 고급스럽게 표현한 NB Letter Pack으로 트렌디하고 여유로운 여름 스웻 셋업 룩을 완성하세요.
-							스탠다드 반팔티보다 여유로운 핏으로 편안한 착용감을 줍니다.
-						</p>
-					</li> -->
-					<li>
-						<a href="#"><img src="./img/main3.jpg" alt=""></a>
-						<p><strong>UNI 2PACK</strong><span>2021 COLLECTION</span>여름 반팔티와 레이어드하여 입기 좋은 기장감과 시원한 소재감으로 업그레이드 된 뉴발란스 레이어드 반팔티로 다양한 룩을 연출해 보세요.</p>
-					</li>
-				</ul>
-				
-			</div>
-			<div class="banner1">
-				<!-- <img src="./img/main1.jpg" alt=""> -->
+			<div class="text">
+				<p>NEW Set-Up Collection</p>
+				<h2>NB Go Out Style</h2>
+				<h3>새롭게 불어오는 변화의 바람</h3>
+				<a href="#">Go Shop ></a>
 			</div>
 		</div>
 	</section>
 	
 	<!-- 두 번째 박스 -->
-	<section id="sect2" class="cf">
-		<div class="nbsc">
-			<div class="titleBox">
-				<h3 class="title">New Balance<span>Sports Club NBSC</span></h3>
-			</div>
-			<div class="slideOuter1">
-				<div class="slideInner1">
-					<div class="miniSld1">
-						<a href="#"><img src="./img/nbsc2.png" alt=""></a>
-					</div>
-					<div class="miniSld1">
-						<a href="#"><img src="./img/nbsc1.png" alt=""></a>
-					</div>
-					<div class="miniSld1">
-						<a href="#"><img src="./img//nbsc3.png" alt=""></a>
-					</div>
+	<section id="sect2">
+		<div class="slideOuter1 row">
+			<h2 class="cateText">Related Product</h2>
+			<h3>연관 제품 보기</h3>
+			<a href="#" class="shopText">Go Shop ></a>
+			<div class="slideInner1">
+				<div class="miniSld">
+					<div class="imgbox"><a href="#"><img src="./img/related_2.png" alt=""></a></div>
+					<p class="prodName">UNI 초경량 캠퍼 집업</p>
+					<p class="pricName">129,000원</p>
+				</div>
+				<div class="miniSld">
+					<div class="imgbox"><a href="#"><img src="./img/related_5.png" alt=""></a></div>
+					<p class="prodName">WOMAN 롱 헤더 반팔티</p>
+					<p class="pricName">39,900원</p>
+				</div>
+				<div class="miniSld">
+					<div class="imgbox"><a href="#"><img src="./img/related_6.png" alt=""></a></div>
+					<p class="prodName">ML725B</p>
+					<p class="pricName">119,000원</p>
+				</div>
+				<div class="miniSld">
+					<div class="imgbox"><a href="#"><img src="./img/related_1.png" alt=""></a></div>
+					<p class="prodName">UNI 초경량 캠퍼 집업</p>
+					<p class="pricName">129,000원</p>
+				</div>
+				<div class="miniSld">
+					<div class="imgbox"><a href="#"><img src="./img/related_4.png" alt=""></a></div>
+					<p class="prodName">UNI 레이어드 반팔티</p>
+					<p class="pricName">29,900원</p>
+				</div>
+				<div class="miniSld">
+					<div class="imgbox"><a href="#"><img src="./img/related_3.png" alt=""></a></div>
+					<p class="prodName">UNI N 트리퍼 4부팬츠</p>
+					<p class="pricName">59,900원</p>
 				</div>
 			</div>
-			<div class="classText">
-				<p><strong>2021 COLLECTION</strong></p>
-				<p class="desp">뉴발란스만의 아메리칸스포츠 헤리티지 무드의 뉴트로함을 보여주는 새로운 컬렉션,
-					NBSC 클래식한 로고와 균형잡힌 드롭핏, 고밀도 레비웨이트 원단, 트렌디한 컬러웨이의 특별함을 만나보세요.
-				</p>
-				<p class="more"><a href="#">MORE</a></p>
-			</div class="desp">
-		</div>
-		<div class="class574">
-			<div class="classBox">
-				<div class="classImg">
-					<a href="#"><img src="./img/class574.jpg" alt=""></a>
-					<a href="#"><img src="./img/class574_2.jpg" alt=""></a>
-				</div>
-				<div class="classText">
-					<h3 class="title">HISTORY<span> CLASS 574</span></h4>
-					<p><strong>BEST ITEM</strong></p>
-					<p class="desp">70년대 헤리티지 스타일에서 영감을 받은 힐을 감싸는 러버힐과 현대적인 실루엣의 미드솔이 만나 현대적으로 재해석된 해리티지를 경험할 수 있습니다. 레트로 나일론 텅라벨과 오버사이즈 N로고, 나뉘어진 슈레이스 홀이 574만의 유니크한 디자인을 보여줍니다.
-					</p>
-					<p class="more"><a href="#none">MORE</a></p>
-				</div>
-				
-			</div>
-		</div>
-		<div class="banner2">
-			<img src="./img/banner.jpg" alt="">
 		</div>
 	</section>
 	
 	<!-- 세 번째 박스 -->
-	<section id="sect3" class="cf">
-		<div class="best">
-			<h3 class="title">Best <span class="newT">New</span></h3>
+	<section id="sect3">
+		
+		<div class="collection row">
+			<!-- <h2 class="cateText">Collection</h2>
+			<a href="#" class="shopText">Go Shop ></a> -->
 			<div class="slideOuter2">
 				<div class="slideInner2">
-							<div class="miniSld2">
-								<div class="imgBox">
-									<a href="#"><img src="./img/best1.png" alt=""></a>
-								</div>
-								<p>MS327LAB [LIGHT GREY] <span class="price">139,000원</span></p>
-							</div>
-							<div class="miniSld2">
-								<div class="imgBox">
-									<a href="#"><img src="./img/best2.png" alt=""></a>
-								</div>
-								<p>ML574BA2 [LIGHT GREY]<span class="price">99,000원</span></p>
-							</div>
-							<div class="miniSld2">
-								<div class="imgBox">
-									<a href="#"><img src="./img/best3.png" alt=""></a>
-								</div>
-								<p>ML725B [WHITE]<span class="price">119,000원</span></p>
-							</div>
+					<div class="miniSld2">
+						<img src="./img/collection1.png" alt="">
+					</div>
+					<div class="miniSld2">
+						<img src="./img/collection2.jpg" alt="">
+					</div>
+					<div class="miniSld2">
+						<img src="./img/collection3.jpg" alt="">
+					</div>
+				</div>
+				<div class="mcol">
+					<img src="./img/collection_m.jpg" alt="">
+				</div>
+				<div class="coltext">
+					<h3>NB LETTER PACK</h3>
+					<p>캘리포니아의 여름을 담은 파스텔 톤의 그린과 옐로, 그리고 클래식한 블루</p>
+					<p  class="coButton"><a href="#">컬렉션 구매하기</a></p>
 				</div>
 			</div>
-			<div class="icon besti">
-				<p>BEST</p>
-			</div><br>
-			<div class="icon newi">
-				<p>NEW</p>
-			</div>
-		</div>	
-		<div class="banner3">
-			<img src="./img/banner2.jpg" alt="">
+			
+			
 		</div>
+		
 	</section>
 	
 	<!-- 네 번째 박스 -->
-	<section id="sect4" class="cf">
-		<h3 class="title"><a href="https://www.instagram.com/newbalance/" target="_blank">FOLLOW US IN INSTAGRAM</a></h3>
-		<div class="sns">
-			
-			<div class="snsImg">
-				<ul>
-					<li><a href="https://www.instagram.com/newbalance/" target="_blank"><img src="./img/sns.jpg" alt=""></a></li>
-					<li><a href="https://www.instagram.com/newbalance/" target="_blank"><img src="./img/sns3.jpg" alt=""></a></li>
-				</ul>
-				<h4><a href="https://www.instagram.com/newbalance/" target="_blank">@newbalance</a></h4>
+	<section id="sect4">
+		
+		<div class="best row">
+			<h2 class="cateText">Best New</h2>
+			<p><a href="#" class="shopText">Go Shop ></a></p>
+			<div class="bestLeft">
+				<div class="imgbox"><a href="#"><img src="./img/best.jpg" alt=""></a></div>
+				<p class="prodName">UNI 베이직 후드집업</p>
+				<p class="pricName">89,900원</p>
 			</div>
-			<div class="snsImg2">
-				<ul>
-					<li><a href="https://www.instagram.com/newbalance/" target="_blank"><img src="./img/sns2.jpg" alt=""></a></li>
-					<li><a href="https://www.instagram.com/newbalance/" target="_blank"><img src="./img/sns4.jpg" alt=""></a></li>
-				</ul>
+			<div class="bestRight">
+				<div class="img">
+					<div class="imgbox"><a href="#"><img src="./img/best1.jpg" alt=""></a></div>
+					<p class="prodName">MS327HR1 (Light Gray)</p>
+				    <p class="pricName">109,000원</p>
+				</div>
+				<div class="img">
+					<div class="imgbox"><a href="#"><img src="./img/best3.jpg" alt=""></a></div>
+					<p class="prodName">MS237BTW (Black)</p>
+				    <p class="pricName">99,000원</p>
+				</div>
+				<div class="img">
+					<div class="imgbox"><a href="#"><img src="./img/best5.jpg" alt=""></a></div>
+					<p class="prodName">CM996HL2 (Yellow)</p>
+				    <p class="pricName">119,000원</p>
+				</div>
+				<div class="img">
+					<div class="imgbox"><a href="#"><img src="./img/best2.jpg" alt=""></a></div>
+					<p class="prodName">MS327HL1 (Navy)</p>
+				    <p class="pricName">99,000원</p>
+				</div>
 			</div>
-			
-		</div>
-		<div class="banner4">
-			<img src="./img/banner3.jpg" alt="">
+			<div class="slideOuter3">
+				<div class="slideInner3">
+					<div class="miniSld3">
+						<div class="imgbox"><a href="#"><img src="./img/best1.jpg" alt=""></a></div>
+						<p class="prodName">MS327HR1 (Light Gray)</p>
+						<p class="pricName">109,000원</p>
+					</div>
+					<div class="miniSld3">
+						<div class="imgbox"><a href="#"><img src="./img/best3.jpg" alt=""></a></div>
+						<p class="prodName">MS237BTW (Black)</p>
+						<p class="pricName">99,000원</p>
+					</div>
+					<div class="miniSld3">
+						<div class="imgbox"><a href="#"><img src="./img/best5.jpg" alt=""></a></div>
+						<p class="prodName">CM996HL2 (Yellow)</p>
+						<p class="pricName">119,000원</p>
+					</div>
+					<div class="miniSld3">
+						<div class="imgbox"><a href="#"><img src="./img/best2.jpg" alt=""></a></div>
+						<p class="prodName">MS327HL1 (Navy)</p>
+						<p class="pricName">99,000원</p>
+					</div>
+				</div>
+			</div>
 		</div>
 		
 	</section>
 
+	<section id="sect5">
+		
+		<div class="nbNow row">
+			<h2 class="cateText">NB Now</h2>
+			<div class="nowBox">
+				<div class="imgBox">
+					<div class="bg"></div>
+					<a href="#"><img src="./img/now.jpg" alt=""></a>
+				</div>
+				<h3>Perfectly Unexpected</h3>
+				<p>현대적인 디자인으로 재해석되어 탄생한 <span>327 스플릿 디자인 신규컬러 출시</span></p>
+				<p class="more"><a href="#">자세히 보기</a></p>
+				
+			</div>
+			<div class="nowBox now2">
+				<div class="imgBox">
+					<div class="bg"></div>
+					<a href="#"><img src="./img/now2.jpg" alt=""></a>
+				</div>
+				<h3>NB KIDS ARRIVAL</h3>
+				<p>현대적인 디자인으로 재해석되어 탄생한 <span>327 스플릿 디자인 신규컬러 출시</span></p>
+				<p class="more"><a href="#">자세히 보기</a></p>
+			</div>
+		</div>
+	</section>
+
+	<section id="sect6">
+		
+		<div class="sns">
+			<div class="snsImg">
+				<a href="https://www.instagram.com/newbalance/" target="_blank"><img src="./img/sns.png" alt=""></a>
+			</div>
+			<div class="snsText">
+				<h2 class="cateText">@newbalance</h2>
+				<h3>인스타그램으로 만나는 뉴발란스</h3>
+				<a href="https://www.instagram.com/newbalance/" target="_blank">FOLLOW US IN INSTAGRAM ></a>
+			</div>
+			<div class="miniSns">
+				<a href="#"><img src="./img/sns.jpg" alt=""></a>
+				<a href="#"><img src="./img/sns2.jpg" alt=""></a>
+				<a href="#"><img src="./img/sns3.jpg" alt=""></a>
+				<a href="#"><img src="./img/sns4.png" alt=""></a>
+				<a href="#"><img src="./img/sns5.jpg" alt=""></a>
+			</div>
+		</div>
+	</section>
 </div>
 
 <footer id='footer'>
-<div class="list">
-	<ul class="cf">
-		<li><a href="#none">FIND A STORE<span>매장안내</span></a></li>
-		<li><a href="#none">TEAM WEAR<span>팀 / 단체복 구매</span></a></li>
-		<li><a href="#none">MEMBER JOIN<span>회원가입</span></a></li>
-		<li><a href="#none">DOWNLOAD APP<span>App 다운로드</span></a></li>
-	</ul>
-</div>
-<div class="infoBox">
-	<div class="infoL">
-		<p><a href="#none">개인정보 처리방침</a> / 이용약관 / ㈜이랜드월드패션사업부 / 서울특별시 금천구 가산디지털1로 159 이랜드월드
-			고객상담실 (AS/오프라인) 080-999-0456, (뉴발란스) 1566-0086
-			대표 이메일 : webmaster@nbkorea.com
-			호스팅 서비스 제공자 : (주)라드씨엔에스
-		</p>
-
+	<div class="infoBox">
+		<div class="infoL">
+			<p><a href="#none">개인정보 처리방침</a> / 이용약관 / ㈜이랜드월드패션사업부 / 서울특별시 금천구 가산디지털1로 159 이랜드월드
+				고객상담실 (AS/오프라인) 080-999-0456, (뉴발란스) 1566-0086
+				대표 이메일 : webmaster@nbkorea.com
+				호스팅 서비스 제공자 : (주)라드씨엔에스
+			</p>
+	
+		</div>
+	
+		<div class="infoR">
+			<p>
+				대표이사 : 최운식 사업자등록번호 : 113-85-19030 통신판매업신고 : 금천구청 제 2005-01053
+				개인정보보호책임자 : 최운식
+				온라인디지털콘텐츠산업발전법에 의한 <a href="#none">콘텐츠보호안내 자세히보기</a>
+			</p>
+		</div>
 	</div>
+	</footer>
 
-	<div class="infoR">
-		<p>
-			대표이사 : 최운식 사업자등록번호 : 113-85-19030 통신판매업신고 : 금천구청 제 2005-01053
-			개인정보보호책임자 : 최운식
-			온라인디지털콘텐츠산업발전법에 의한 <a href="#none">콘텐츠보호안내 자세히보기</a>
-		</p>
-	</div>
-</div>
-</footer>
-
-<script src="./js/index.js"></script>
 <script src="./js/common.js"></script>
+<script src="./js/index.js"></script>
 </body>
 </html>
 

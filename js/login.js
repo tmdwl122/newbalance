@@ -1,3 +1,21 @@
+$('.loginForm div p').on('focusin', function(){
+    $(this).addClass('on')
+})
+
+$('.loginForm div p').on('focusout', function(){
+    if(!$(this).find('input').val()) {
+        $(this).removeClass('on')
+    } 
+})
+
+$('.login_wrap .btnonoff_line .switch, .login_wrap .btnonoff_line p').on('click', function(){
+    if ( !$(this).parent().hasClass('on') ) {
+        $(this).parent().addClass('on')
+    } else {
+        $(this).parent().removeClass('on')
+    }
+    return false; 
+})
 
 
 // 로그인폼 입력값 유효성 체크

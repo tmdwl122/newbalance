@@ -1,295 +1,370 @@
+@media screen and (max-width:1600px) {
 
-@media screen and (max-width:1800px) {
+    .mainimg .text {
+        top: 60%;
+    }
+
+    .slideOuter1 { 
+        padding: 80px 30px 50px 130px;
+        color: #111; 
+        overflow: hidden;
+    }
+    .slideInner1 { 
+        position:relative;
+        opacity: 1;
+        transform: translateX(0%);
+        transition: all 2s;
+    }
+
+    .slideInner1 .slick-slide {
+        transform: scale(1);
+        transition: all 0.5s;
+        padding: 10px 10px;
+      }
+
+    .imgbox img:hover {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .collection {
+        padding: 100px 50px 0 120px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slideOuter2 { 
+        /* position:relative; */
+        padding: 60px 30px 0px 40px;
+        opacity: 1;
+        transform: translateY(0%);
+        transition: all 1s;
+        text-align: center;
+    }
+
+    .slideInner2 .slick-arrow {
+        position:absolute;
+        bottom: -60px;
+        right: 60px;
+        opacity: 1;
+    }
+
+    .slideInner2 .slick-arrow:last-child {
+        right: 0px;
+    }
+
+    .imgbox img:hover {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .best { 
+        padding: 100px 0px 0 200px;
+    }
+
+    #sect4 .bestLeft {
+        transition: all 1.2s;
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    .best .bestLeft {
+        float: left;
+        font-size: 15px;
+        width: 36%;
+        /* margin-right: 15px; */
+          /* flex: 1; */
+    }
+
+    .best .bestRight {
+        float: right;
+        width: 62%;
+        padding: 0px 20px 0px 20px
+    }
+
+    .bestRight .img .imgbox {
+        width: 87%;
+    }
+
+    .bestRight .img {
+        width: 45%;
+        padding:  0px 0px 20px 0;
+    }
+
+    #sect4 .bestRight div {
+        transition: all 1.2s;
+        transform: translateY(0%);
+        transition-delay: 0s;
+        opacity: 1;
+    }
+
+    #sect4 .bestRight div:nth-child(3),
+    #sect4 .bestRight div:nth-child(4) {
+    transition: all 1.2s;
+    transform: translateY(0%);
+    transition-delay: 0s;
+    opacity: 1;
+    }
+
+    .nbNow {
+        overflow: hidden;
+        padding: 120px 90px 100px 90px;
+        text-align: center;
+        font-size: 16px;
+        margin: 0 auto;
+     }
+     
     
-    #wrap::before {
-        content: none
+    .nowBox .bg {
+        width: 0%;
+        height: 0%;
+    }
+
+    .nbNow .nowBox {
+        float: left;
+        width: 50%;
+        padding-left: 60px;
+    }
+
+    #sect6 {
+        height: 100%;
+        margin-top: 60px;
+    } 
+
+    .snsImg a {
+        z-index: 99;
+        position: relative;
+        top:0;
+        left: 0px;
+    }
+
+    .snsText {
+        position: absolute;
+        top: 5%;
+        left: 55%;
+        z-index: 99;
+        text-align: left;
+    }
+
+    #sect6 h2 {
+        font-size: 30px;
+        padding: 0px 0 0 0px;
+    }
+    #sect6 h3 {
+        font-size: 19px;
+    }
+
+    .snsText a {
+        text-decoration:underline;
+        font-size: 16px;
+        padding-top: 27px;
+    }
+
+    .snsImg img {
+        width: 50%;
+    }
+
+    .miniSns img {
+        width: 70%;
+    }
+}
+    
+
+
+
+
+@media screen and (max-width:900px) {
+    .mainimg .text {
+        left:110px; 
+        top: 67%;
+    }
+
+    .mainimg .text > h2 {
+        font-size:  35px;
+        font-weight: bold;
+    }
+
+    .mainimg .text > h3 {
+        font-weight: 500;
+        font-size:  17px;
+        font-family: 'Noto Sans KR', sans-serif;
+        margin-bottom:35px;
+    }
+
+    h2.cateText {
+        font-size:  35px;
+    }
+
+    .slideOuter1> h3 {
+        font-size:  17px;
+    }
+
+    .slideOuter1 { 
+        padding: 90px 25px 20px 75px;
+        color: #111; 
+        overflow: hidden;
+    }
+
+    
+    /* sect3 */
+
+    .collection {
+        padding: 0px 0px 0 75px;
+        width: 100%;
+        /* height: 100vh; */
+        overflow: hidden;
     }
     
-    #wrap::after {
-        content: none
+    .collection h3 {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 22px;
+        padding-top: 15px;
     }
-   
 
-    #sect1 .mainCol {
+    .slideInner2 { 
         display: none;
     }
 
-    .mainText p:nth-child(2) {
-        padding: 20px 0 15px;
-    }
-
-    .nbsc .titleBox .bg {
-        width: 0;
-    }
-
-    #sect2 .banner2,
-    #sect3 .banner3,
-    #sect4 .banner4{
-       display: none;
-    }
-
-    /* sect2 시작 */
-    #sect2 .nbsc {
-        float: none;
-        width: 100%;
-        transform: translate(0, 0);
-    }
-    
-    .nbsc .titleBox {
-        position: relative;
-        width: 100%;
-        text-align: center;
-        transform: translateX(0%);
-        transition: all 1.3s;
+    .slideOuter2 { 
+        padding: 100px 40px 0px 20px;
         opacity: 1;
-    }
-    
-    .nbsc .titleBox h3 {
-        margin: 160px 0 50px 0px;
-    }
-
-    .nbsc .classText {
-        width: 100%;
+        transform: translateY(0%);
+        transition: all 1s;
         text-align: center;
     }
-    
-    .nbsc .desp {
-        width: 100%;
-        padding: 10px 200px;
+
+    .collection p {
+        font-size: 16px;
+        padding-bottom: 20px;
     }
 
-    .nbsc .titleBox span {
+    .mcol {
+        display: block
+    }
+
+
+    /* sect4 */
+    .best { 
+        padding: 100px 45px 0 100px;
+    }
+
+    #sect4 .shopText {
+        padding-bottom: 20px;
+        padding-top: 50px;
+    }
+
+    .best .bestLeft {
+        display: none;
+    }
+
+    .best .bestRight {
+        display: none;
+    }
+
+    .slideOuter3 {
         display: block;
     }
+
+    #sect4 .prodName {
+        font-size: 16px;
+        font-weight: 500;
+        word-spacing: 2px;
+        padding-bottom: 3px 
+    }
+
+    .pricName {
+        font-size: 14px;
+        color: #757575;
+        font-weight: 400;
+    }
+
     
-    .nbsc .slideOuter1 {
-        width: 500px;
+     /* sect5 */
+     #sect5 h2 {
+        margin: 0px 0 10px 60px;
+    }
+    
+    .nbNow {
+        overflow: hidden;
+        padding: 110px 45px 100px 40px;
+        text-align: center;
+        font-size: 16px;
         margin: 0 auto;
-    }
+     }
 
-    .class574  {
-        position: static;
-        left: 50%;
-        overflow: hidden;
-        padding: 100px 0 180px;
-    }
-
-    
-    .classBox .classText {
-        width: 100%;
-        transform: translateX(0%);
-        opacity: 1;
+     .nbNow .nowBox {
         float: left;
-        text-align: center;
+        width: 100%;
+        padding-left: 60px;
     }
 
-    .classBox .classText span {
+
+    .nowBox h3 {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .nowBox p {
+        font-size: 15px;
+        padding: 8px 0 12px;
+    }
+
+    #sect5 span {
         display: inline;
-    }    
-
-    .classBox .classText .desp {
-        padding: 10px 220px
     }
 
-    .classBox .classImg {
-        width: 100%;
-        text-align: center;
-        float: right;
+
+    /* sect6 */
+    .sns {
         overflow: hidden;
-        /* position: absolute;
-        left: 24.8%;
-        top: 75%;
-        overflow: hidden;
-        border: 1px solid #888; */
-    }
-    .classBox .classImg img {
-        width: 400px;
-        padding-top: 20px;
-    }
-   
-    #sect2 .more {
-        font-size: 17px;
-        color: #fff;
-        width: 100%;
-        text-align: center;
-        margin-top: 0px;
-    }
-    
-    #sect2 .more a {
-        display: inline-block;
-        padding: 10px 20px;  
-        background-color: #000; 
-        border-radius: 25px;
-    }
-    
-    #sect2 .class574 .more {
-        text-align: center;
-    }
-    
-    .class574 .classImg img:hover {
-        transform: scale(1);
-    }
-
-    .class574 .classImg a:nth-child(2) {
-        display: inline;
-        padding-left: 15px;
-    }
-    
-    /* sect2 끝 */
-
-
-    /* sect3 시작 */
-    .best {
-        font-size: 20px;
-        text-align: left;
-        position: relative;
-        left: 50%;
-        top: 0%;
-        float: none;
-        width: 475px;
-        transform: translate(-50%,0px);
-        /* margin: 430px 0 0 95px */
-    }
-
-    .best h3{
-        text-align: right;
-        font-size: 50px;
-        transform: translateY(0%);
-        opacity: 1;
-        transition: all 1s;
-    }
-
-    .miniSld2 img:hover {
-        transform: scale(1);
-    }
-/* sect3 끝 */
-
-
-/* sect4 시작 */
-#sect4 {
-    position: relative;
-    /* overflow: hidden; */
-    margin: 100px 0 160px
-}
-
-#sect4 .sns {
-    float: left;
-    width: 100%;
-    text-align: center;
-    transform: translate(0px, 0px);
-}
-
-#sect4 h3 {
-    writing-mode: horizontal-tb;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    top:0px;
-    z-index: 99;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-#sect4 h3:hover {
-    color: #000;
-    -webkit-text-stroke: 0px #000;
-}
-
-#sect4 .snsImg {
-    position: relative;
-    top:0px;
-    left: 0%;
-    transform: translateY(0%);
-    transition: all 1.3s;
-    opacity: 1;
-}
-
-#sect4 .snsImg ul li,
-#sect4 .snsImg2 ul li {
-    padding: 5px;
-    width: 25%;  
-    float: left;
-}
-
-#sect4 .snsImg2 {
-    position: relative;
-    /* top:250px; */
-    /* left: 15%; */
-    transform: translateY(0%);
-    transition: all 1.3s;
-    opacity: 1;
-}
-
-#sect4.on .snsImg2 {
-    transform: translateY(0%);
-    opacity: 1;
-}
-
-#sect4 .snsImg h4 a {
-    font-weight: bold;
-    font-size: 25px;
-    border: 1px solid #222;
-    padding: 8px 15px;
-    width: 210px;
-    display: none;
-    border-radius: 30px;
-    margin-top: 15px;
-}
-
-#sect4 .snsImg h4 a:hover {
-    text-decoration: none;
-}
-/* sect4 끝 */
- 
-}
-
-@media screen and (max-width:800px) {
-    
-    .main .mainText {
-        display: none;
-    }
-
-    #sect1 .banner1 {
-        float: right;
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        background: url(../img/main1.jpg) no-repeat;
+        background: url(../img/sns.png) no-repeat;
         background-size: cover;
+        position: relative;
+        font-size: 18px;
     }
 
-     .nbsc .desp {
-        width: 100%;
-        padding: 10px 100px;
+    .snsImg img {
+        opacity: 0;
     }
 
-    .class574 .classImg a:nth-child(2) {
+    .miniSns {
         display: none;
     }
 
-    .classBox .classText .desp {
-        padding: 10px 100px
+    .snsText {
+        position: absolute;
+        top: 5%;
+        left: 55%;
+        z-index: 99;
+       
     }
 
-    #sect4 {
-        position: relative;
-        /* overflow: hidden; */
-        margin: 100px 0 100px
-    }
-
-    #sect4 .sns {
-        float: left;
-        width: 100%;
-        text-align: center;
-        transform: translate(0px, 0px);
-        padding: 0 50px;
+    #sect6 h2 {
+        font-size: 27px;
+        color: #fff;
+        padding: 0px 0 0 0px; 
     }
     
-
-    #sect4 .snsImg ul li,
-    #sect4 .snsImg2 ul li {
-        padding: 5px;
-        width: 50%;  
-        float: left;
+    #sect6 h3 {
+        font-size: 15px;
+        color: #fff;
+        display: none;
     }
+
+    .snsText a {
+        color: #fff;
+        text-decoration:underline;
+        font-size: 13px;
+        display: inline-block;
+        padding-top: 15px;
+     
+    }
+
+    .snsImg img {
+        width: 100%;
+    }
+
+    section {height: auto;}
+
 }

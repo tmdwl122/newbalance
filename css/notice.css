@@ -1,0 +1,150 @@
+
+h1{
+    background: url(../img/logo.png) no-repeat;
+}
+
+#nav {
+    background-color: #fff;
+}
+
+#nav .open .bar {
+    width: 24px;
+    height: 2px;
+    background-color: #555;
+    position: absolute;
+    transition: all 0.4s;
+}
+
+#mypage li {
+    font-size: 20px;
+    color: #555;
+    margin-top: 20px;
+}
+
+.row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    /* font-weight: bold; */
+}
+
+.bodytext_area {
+    padding: 85px 40px 110px 90px;
+    
+}
+
+.bodytext_area .search {
+    text-align: right;
+    border-bottom:1px solid #ccc;
+    width: 180px;
+    float: right;
+    margin: 0 0 20px;
+}
+
+.bodytext_area .search .tbox {
+    padding:0 5px 0 0px; 
+    width:150px; 
+    height:35px; 
+    line-height:35px; 
+    border:none; 
+}
+
+.bodytext_area .search .btn_srch {
+    width:20px; 
+    height:35px; 
+    font-size:14px; 
+    vertical-align:middle; 
+    border: none;
+    color: #555;
+}
+
+.noticeLi {
+    border-top: 2px solid #444;
+    margin: 20px 0 40px;
+    font-size: 14px;
+}
+
+.noticeLi th {
+    border-bottom:1px solid #cfcfcf; 
+    padding: 10px;
+    height: 61px;
+}
+
+.noticeLi td {
+    text-align:center; 
+    border-bottom:1px solid #ccc; 
+    padding: 10px;
+    height: 61px;
+    color: #333;
+}
+
+.noticeLi td.tit_notice {
+    text-align: left
+}
+
+.noticeLi col:nth-child(1) {width:auto;}
+.noticeLi col:nth-child(2) {width:25%;}
+.noticeLi col:nth-child(3) {width:10%;}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    display:inline-block; 
+    color: #777;
+}
+.pagination a.pbtn {
+    padding:7px; 
+    text-align:center; 
+    vertical-align:middle; 
+}
+
+.pagination .pagenum {
+    display:inline-block; 
+    width:25px; 
+    height:25px; 
+    line-height:25px; 
+    text-align:center; 
+    vertical-align:middle;
+}
+
+.pagination .currentpage {
+    color: #111;
+}
+
+.pagination a:hover .pagenum {
+    color: #111;
+    background:#ddd;}
+
+
+@media screen and (max-width:1800px) {
+    h1 {
+        background-size: 40px;
+        left: 13px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .noticeLi col:nth-child(3),
+    .noticeLi th:nth-child(3),
+    .noticeLi td:nth-child(3) {
+        display: none;
+    }
+
+    .bodytext_area .search {
+        margin: 20px 0 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .noticeLi col:nth-child(2),
+    .noticeLi th:nth-child(2),
+    .noticeLi td:nth-child(2) {
+        display: none;
+    }
+}

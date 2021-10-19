@@ -1,0 +1,89 @@
+h1{
+    background: url(../img/logo.png) no-repeat;
+}
+
+#nav {
+    background-color: #fff;
+}
+
+#nav .open .bar {
+    width: 24px;
+    height: 2px;
+    background-color: #555;
+    position: absolute;
+    transition: all 0.4s;
+}
+
+#mypage li {
+    font-size: 20px;
+    color: #555;
+    margin-top: 20px;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    padding: 100px 0 30px;
+}
+
+.sub_menu {
+    width: 100%;  
+    text-align: center;
+}
+
+.sub_menu li {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 15.5px;
+    color: #444;
+}
+
+.sub_menu li:hover {
+    color: #da2d2d;
+}
+
+.product {
+    overflow: hidden;
+    padding: 0 60px 200px 140px;
+}
+
+.product li {
+    float: left;
+    width: 25%;
+    padding: 30px 15px 20px 15px;
+    position: relative;
+}
+
+
+.product .desp {
+    background-color: #fff;
+    position: absolute;
+    padding: 10px 0 0;
+    width: 100%;
+    top: 79%;
+    opacity: 0;
+
+}
+
+.product .desp.on {
+    top: 79%;
+    opacity: 1;
+}
+
+.product .desp p {
+    font-size: 15px;
+}
+
+.product .desp p:nth-child(2) {
+    font-size: 14px;
+    color: #da2d2d;
+    padding: 7px 0 0 ;
+}
+
+.product .desp p:nth-child(3) {
+    font-size: 13px;
+    color: #888;
+}
+
